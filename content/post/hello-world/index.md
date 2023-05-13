@@ -10,7 +10,7 @@ tags:
     - Example Tag
 ---
 
-Test 
+Test2 
 
 Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
 
