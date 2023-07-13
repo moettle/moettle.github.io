@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-<g id="surface1">
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,49.411765%,73.333333%);fill-opacity:1;" d="M 12 24 C 18.628906 24 24 18.628906 24 12 C 24 5.371094 18.628906 0 12 0 C 5.371094 0 0 5.371094 0 12 C 0 18.628906 5.371094 24 12 24 Z M 12 24 "/>
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 19.667969 19 L 16.652344 19 L 16.652344 13.867188 C 16.652344 12.460938 16.117188 11.671875 15.003906 11.671875 C 13.792969 11.671875 13.160156 12.492188 13.160156 13.867188 L 13.160156 19 L 10.253906 19 L 10.253906 9.222656 L 13.160156 9.222656 L 13.160156 10.539062 C 13.160156 10.539062 14.03125 8.921875 16.109375 8.921875 C 18.183594 8.921875 19.667969 10.191406 19.667969 12.808594 Z M 6.789062 7.941406 C 5.800781 7.941406 5 7.132812 5 6.136719 C 5 5.140625 5.800781 4.332031 6.789062 4.332031 C 7.78125 4.332031 8.582031 5.140625 8.582031 6.136719 C 8.582031 7.132812 7.78125 7.941406 6.789062 7.941406 Z M 5.292969 19 L 8.320312 19 L 8.320312 9.222656 L 5.292969 9.222656 Z M 5.292969 19 "/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="2" />
+  <line x1="8" y1="11" x2="8" y2="16" />
+  <line x1="8" y1="8" x2="8" y2="8.01" />
+  <line x1="12" y1="16" x2="12" y2="11" />
+  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
 </svg>
+
+
