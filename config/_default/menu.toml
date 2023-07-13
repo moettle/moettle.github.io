@@ -11,7 +11,6 @@
 identifier = "github"
 name = "GitHub"
 url = "https://github.com/moettle/moettle.github.io"
-
 [social.params]
 icon = "brand-github"
 
@@ -19,7 +18,6 @@ icon = "brand-github"
 identifier = "twitter"
 name = "Twitter"
 url = "https://twitter.com/moettle_"
-
 [social.params]
 icon = "brand-twitter"
 
@@ -28,6 +26,13 @@ icon = "brand-twitter"
 identifier = "linkedin"
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/moritz-oettle/"
-
 [social.params]
 icon = "brand-linkedin"
+
+
+[[social]]
+identifier = "rss"
+name = "RSS"
+url = "https://dfir-delight.de/index.xml"
+[social.params]
+icon = "rss"
