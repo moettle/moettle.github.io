@@ -36,3 +36,10 @@ name = "RSS"
 url = "https://dfir-delight.de/index.xml"
 [social.params]
 icon = "rss"
+
+[[social]]
+identifier = "email"
+name = "Email"
+url = "mailto:dfir-delight@proton.me"
+[social.params]
+icon = "email"
