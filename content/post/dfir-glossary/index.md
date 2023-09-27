@@ -2,7 +2,7 @@
 title: DFIR Glossary
 description: Collection of terms and abbreviations in the field of DFIR
 slug: dfir-glossary
-date: 2023-09-27 18:00:00+0000
+date: 2023-09-27 16:00:00+0000
 image: cover.jpg
 categories:
     - Introduction
