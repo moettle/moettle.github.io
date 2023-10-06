@@ -29,7 +29,7 @@ Frequently, I come across poor threat / incident response reports that seem to p
 * Use a consistent Timezone, ideally UTC+0. In any case, specify the timezone you are using.
 
 # What is a threat report even?
-A threat report is a document or publication that provides detailed information about a specific (current) cyber threats. These reports are typically authored by  cybersecurity organizations, government agencies, or security vendors with the primary objective of keeping organizations and individuals well-informed about the latest threats in the cyber space. Most often these reports are published after an IR engagement. Hence, the report usually covers a single attack, or a set of attacks performed by the same threat actor. A threat report should not be confused with a report about a threat landscape, which has a bigger picture in mind.  In this article, we will delve into the specifics of threat / incident response reports.
+A threat report is a document or publication that provides detailed information about specific (current) cyber threats. These reports are typically authored by  cybersecurity organizations, government agencies, or security vendors with the primary objective of keeping organizations and individuals well-informed about the latest threats in the cyber space. Most often these reports are published after an IR engagement. Hence, the report usually covers a single attack, or a set of attacks performed by the same threat actor. A threat report should not be confused with a report about a threat landscape, which has a bigger picture in mind.  In this article, we will delve into the specifics of threat / incident response reports.
 
 # Contents of a threat report
 

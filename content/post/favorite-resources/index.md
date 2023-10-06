@@ -31,7 +31,7 @@ The following are some of my favorite sources. I added links to RSS feeds and Tw
 |-------|------|------|----------|------|
 | [Reddit BlueTeamSec](https://www.reddit.com/r/blueteamsec/)   | Collection, IR, DF, TI, Vulns | [Yes](https://www.reddit.com/r/blueteamsec/new.rss)  | No  | Best and most comprehensive collection of new articles and posts I know so far. That's the first thing I check every day :)  |
 | [The DFIR Report](https://thedfirreport.com/)  | Blog, DF, IR, TI  | No  | [Yes](https://twitter.com/TheDFIRReport) | Excellent and very detailed reports about current attacks. |
-| [Windows Incident Response](https://windowsir.blogspot.com/) | Blog, DF | [Yes](https://windowsir.blogspot.com/feeds/posts/default) | No  | One of the best forensic blogs out there. Nothing else is to be expected by Harlan Carvey, the author of the books "Windows Forensic Analysis, "Windows Registry Forensics", and many more. |
+| [Windows Incident Response](https://windowsir.blogspot.com/) | Blog, DF | [Yes](https://windowsir.blogspot.com/feeds/posts/default) | No  | One of the best forensic blogs out there. Nothing else is to be expected by Harlan Carvey, the author of the books "Windows Forensic Analysis", "Windows Registry Forensics", and many more. |
 | [Inversecos](https://www.inversecos.com/) | Blog, IR, DF | No | [Yes](https://twitter.com/inversecos) | Great DFIR blog covering various topics. Low volume but high quality :) |
 | [Cyb3erops](https://cyb3rops.medium.com/) | Blog, IR, DF, TI | No | [Yes](https://twitter.com/cyb3rops) | Florian Roth, undoubtedly one of the biggest contributers to the cybersecurity community with projects like Thor, Sigma, Raccine, etc., frequently posts on Twitter. I would also recommend to follow him on Twitter to get the latest news. |
 | [JPCert](https://blogs.jpcert.or.jp/en/)  | CERT, DF, IR, MA |  No | [Yes](https://twitter.com/jpcert_en)  | Many nice blog posts about a variety of cybersecurity topics.  |
@@ -45,7 +45,7 @@ The following are some of my favorite sources. I added links to RSS feeds and Tw
 | [Krebs on Security](https://krebsonsecurity.com/)  | Blog  | No  | No  | Security news and investigations  |
 | [Security Affairs](https://securityaffairs.com/)  | News  | No  | No  |  News about all cybersecurity-related topics |
 | [vx-underground](https://www.vx-underground.org/)  | Collection, MA  | No | [Yes](https://twitter.com/vxunderground)  | Collection of malware samples and source codes  |
-| [Darknet Diaries](https://darknetdiaries.com/)  | Podcast  | No  | [Yes](https://twitter.com/DarknetDiaries)  | Well research stories in the realm of hacking and cyber security. One of my favorite podcasts in that area :)  |
+| [Darknet Diaries](https://darknetdiaries.com/)  | Podcast  | No  | [Yes](https://twitter.com/DarknetDiaries)  | Well researched stories in the realm of hacking and cyber security. One of my favorite podcasts in that area :)  |
 | Sandworm  | Book  | No  | No  | "Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers" is a great book and should be read by everyone working in cybersecurity.  |
 
 
