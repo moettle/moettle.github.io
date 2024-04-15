@@ -10,6 +10,7 @@ tags:
     - Incident Response
     - Forensics
     - Threat Intelligence
+    - Ransomware
 toc:
     false
 ---
