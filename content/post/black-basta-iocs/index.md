@@ -47,6 +47,8 @@ trailcosolutions.com
 
 We strongly recommend to block these IOCs and to implement appropriate detections based on our IOCs.
 
+To receive our HvS IOCs automatically in the future, I recommend to subscribe to our unrestricted [MISP Feed](https://misp.ir.hvs-consulting.de/feed/unrestricted/). This feed allows you to integrate our tagged IOCs in your MISP and enables you to automatically process and integrate these IOCs for detection and mitigation in your security solutions.
+
 # Resources
 
 * [[1]](https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta)https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta
