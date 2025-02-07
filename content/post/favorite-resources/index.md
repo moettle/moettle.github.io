@@ -2,7 +2,7 @@
 title: My Favorite DFIR and Cybersecurity Resources
 description: A compilation of the sources from which I acquire news, updates, and new knowledge.
 slug: favorite-resources
-date: 2023-09-27 17:00:00+0000
+date: 2024-02-07 17:00:00+0000
 image: cover.jpg
 categories:
     - Overview
@@ -40,6 +40,7 @@ The following are some of my favorite sources. I added links to RSS feeds and Tw
 | [Unit42](https://unit42.paloaltonetworks.com/)  | Vendor, TI  | No | [Yes](https://twitter.com/Unit42_Intel)  | Palo Alto's Threat Intelligence Blog  |
 | [Securelist](https://securelist.com/)  | Vendor, TI  | No | [Yes](https://twitter.com/Securelist)  | Kaspersky's Threat Intelligence Blog  |
 | [CISA](https://www.cisa.gov/news-events/cybersecurity-advisories)  | Advisory  | [Yes](https://www.cisa.gov/cybersecurity-advisories/all.xml)  |  [Yes](https://twitter.com/CISACyber) | Cybersecurity & Infrastructure Security Agency published daily advisories on vulnerabilities and more. |
+| [Bad Sector Labs Blog](https://blog.badsectorlabs.com/)  | Offensive  | [Yes](https://blog.badsectorlabs.com/feeds/all.atom.xml)  | [Yes](https://x.com/badsectorlabs)  | Great to get an overview of current offensive news, write-ups, tools and exploits. |
 | [Heise Security](https://www.heise.de/security/)  | GER, News  | [Yes](https://www.heise.de/security/rss/news-atom.xml)  | [Yes](https://twitter.com/heisec)  | Go to news feed in germany for all related IT Security topics. Usually not very technical and not directly related to DFIR.  |
 | [Netzpolitik.org](https://netzpolitik.org/)  | GER, Politics  | [Yes](https://netzpolitik.org/feed)  | [Yes](https://twitter.com/netzpolitik_org)  | German site (somtimes also english articles) about digital freedom rights.  |
 | [Krebs on Security](https://krebsonsecurity.com/)  | Blog  | No  | No  | Security news and investigations  |
@@ -50,6 +51,9 @@ The following are some of my favorite sources. I added links to RSS feeds and Tw
 
 
 # Twitter
+
+**This section is slightly deprecated since TweetDeck is not freely available anymore, and X is loosing importance. The search for tags still works.**
+
 One of the best platform to get the newest information about cybersecurity is Twitter. For a long time Twitter was the go-to platform for the whole community to share information and news about the newest attacks. Penetration testers share their newest tools and exploits, and threat analysts share their newest intel about current attacks. Since Musk has bought Twitter parts of the community moved to Mastodon or other platforms but still, Twitter is a platform rich in information on cybersecurity. The only thing you need to know is how to use it effectively.
 
 Twitter lets you search for certain tags in their search field. The best tags on Twitter include:
