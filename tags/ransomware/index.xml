@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ransomware on DFIR Delight</title><link>https://dfir-delight.de/tags/ransomware/</link><description>Recent content in Ransomware on DFIR Delight</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 14 Apr 2024 11:30:00 +0000</lastBuildDate><atom:link href="https://dfir-delight.de/tags/ransomware/index.xml" rel="self" type="application/rss+xml"/><item><title>Black Basta - Insights from a Ransomware Response Assessment</title><link>https://dfir-delight.de/p/black-basta-iocs/</link><pubDate>Sun, 14 Apr 2024 11:30:00 +0000</pubDate><guid>https://dfir-delight.de/p/black-basta-iocs/</guid><description>&lt;img src="https://dfir-delight.de/p/black-basta-iocs/cover.jpg" alt="Featured image of post Black Basta - Insights from a Ransomware Response Assessment" />&lt;h1 id="black-bastas-clumsy-attack">Black Basta&amp;rsquo;s clumsy attack
+&lt;/h1>&lt;p>In a recent incident response assessment, our encounter with the ransomware group Black Basta shed light on their tactics. Although they were able to get initial access to a server system an early detection enabled us to contain and remediate the incident shortly after. What&amp;rsquo;s interesting are the activities performed by Black Basta during their brief presence on the compromised system. Forensic analysis provided us with invaluable insights, including high quality IOCs, which we recently published &lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>. Besides the forensics findings, this article shows once again that established ransomware groups often lack sophistication and can be protected against.&lt;/p>
+&lt;p>After gaining initial access, Black Basta attempted to deploy a beacon calling back to their C2 infrastructure. Since the server did not have direct access to the internet (outgoing traffic was very limited), the operator started to panic. In the following hour, the Black Basta operator tried various ways to reach their C2 infrastructure, thereby disclosing executed commands, IPs, as well as domains belonging to the C2 infrastructure. The attack showed similarities to the attack observed by TrendMicro &lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>[2]&lt;/a>&lt;/p>
+&lt;h1 id="iocs">IOCs
+&lt;/h1>&lt;p>You can find our published IOCs on our Github repository &lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>, which also includes an export of our MISP event with more detailed descriptions and tagging. Since our observed attack and the attack observed by TrendMicro showed various parallels, we included TrendMicro&amp;rsquo;s IOCs to provide a more comprehensive collection of Black Basta IOCs.&lt;/p>
+&lt;p>The following list of IPs and Domains have a very high certainty, since all of them were pinged while the operator was trying to get a connection to their C2 infrastructure. Since outgoing ICMP traffic was not allowed (unknown to the operator), they started to try out every C2 endpoint know to them. Very clumsly indeed but very fruitful for us :)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">45.11.183.110
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">198.244.135.245
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">91.134.207.30
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">37.10.71.143
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">170.130.165.44
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">15.204.170.49
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">79.132.135.149
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">170.130.165.132
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">79.132.130.60
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">91.134.187.17
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">144.202.38.240
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">198.27.121.195
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">151.80.52.32
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">webnubee.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">startupbuss.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">artspathgroup.net
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">buyblocknow.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">trailcosolutions.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We strongly recommend to block these IOCs and to implement appropriate detections based on our IOCs.&lt;/p>
+&lt;p>To receive our HvS IOCs automatically in the future, I recommend to subscribe to our unrestricted &lt;a class="link" href="https://misp.ir.hvs-consulting.de/feed/unrestricted/" target="_blank" rel="noopener"
+>MISP Feed&lt;/a>. This feed allows you to integrate our tagged IOCs in your MISP and enables you to automatically process and integrate these IOCs for detection and mitigation in your security solutions.&lt;/p>
+&lt;h1 id="resources">Resources
+&lt;/h1>&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>&lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>[2]&lt;/a> &lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761208.htm#&amp;amp;position=46&amp;amp;from_view=collections&amp;amp;uuid=dcbe476a-37f5-4321-baca-55efaff2416d" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item></channel></rss>

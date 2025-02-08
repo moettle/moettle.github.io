@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Intelligence on DFIR Delight</title><link>https://dfir-delight.de/tags/threat-intelligence/</link><description>Recent content in Threat Intelligence on DFIR Delight</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 14 Apr 2024 11:30:00 +0000</lastBuildDate><atom:link href="https://dfir-delight.de/tags/threat-intelligence/index.xml" rel="self" type="application/rss+xml"/><item><title>Black Basta - Insights from a Ransomware Response Assessment</title><link>https://dfir-delight.de/p/black-basta-iocs/</link><pubDate>Sun, 14 Apr 2024 11:30:00 +0000</pubDate><guid>https://dfir-delight.de/p/black-basta-iocs/</guid><description>&lt;img src="https://dfir-delight.de/p/black-basta-iocs/cover.jpg" alt="Featured image of post Black Basta - Insights from a Ransomware Response Assessment" />&lt;h1 id="black-bastas-clumsy-attack">Black Basta&amp;rsquo;s clumsy attack
+&lt;/h1>&lt;p>In a recent incident response assessment, our encounter with the ransomware group Black Basta shed light on their tactics. Although they were able to get initial access to a server system an early detection enabled us to contain and remediate the incident shortly after. What&amp;rsquo;s interesting are the activities performed by Black Basta during their brief presence on the compromised system. Forensic analysis provided us with invaluable insights, including high quality IOCs, which we recently published &lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>. Besides the forensics findings, this article shows once again that established ransomware groups often lack sophistication and can be protected against.&lt;/p>
+&lt;p>After gaining initial access, Black Basta attempted to deploy a beacon calling back to their C2 infrastructure. Since the server did not have direct access to the internet (outgoing traffic was very limited), the operator started to panic. In the following hour, the Black Basta operator tried various ways to reach their C2 infrastructure, thereby disclosing executed commands, IPs, as well as domains belonging to the C2 infrastructure. The attack showed similarities to the attack observed by TrendMicro &lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>[2]&lt;/a>&lt;/p>
+&lt;h1 id="iocs">IOCs
+&lt;/h1>&lt;p>You can find our published IOCs on our Github repository &lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>, which also includes an export of our MISP event with more detailed descriptions and tagging. Since our observed attack and the attack observed by TrendMicro showed various parallels, we included TrendMicro&amp;rsquo;s IOCs to provide a more comprehensive collection of Black Basta IOCs.&lt;/p>
+&lt;p>The following list of IPs and Domains have a very high certainty, since all of them were pinged while the operator was trying to get a connection to their C2 infrastructure. Since outgoing ICMP traffic was not allowed (unknown to the operator), they started to try out every C2 endpoint know to them. Very clumsly indeed but very fruitful for us :)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">45.11.183.110
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">198.244.135.245
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">91.134.207.30
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">37.10.71.143
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">170.130.165.44
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">15.204.170.49
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">79.132.135.149
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">170.130.165.132
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">79.132.130.60
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">91.134.187.17
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">144.202.38.240
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">198.27.121.195
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">151.80.52.32
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">webnubee.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">startupbuss.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">artspathgroup.net
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">buyblocknow.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">trailcosolutions.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We strongly recommend to block these IOCs and to implement appropriate detections based on our IOCs.&lt;/p>
+&lt;p>To receive our HvS IOCs automatically in the future, I recommend to subscribe to our unrestricted &lt;a class="link" href="https://misp.ir.hvs-consulting.de/feed/unrestricted/" target="_blank" rel="noopener"
+>MISP Feed&lt;/a>. This feed allows you to integrate our tagged IOCs in your MISP and enables you to automatically process and integrate these IOCs for detection and mitigation in your security solutions.&lt;/p>
+&lt;h1 id="resources">Resources
+&lt;/h1>&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>&lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>[2]&lt;/a> &lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761208.htm#&amp;amp;position=46&amp;amp;from_view=collections&amp;amp;uuid=dcbe476a-37f5-4321-baca-55efaff2416d" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>Threat Reports</title><link>https://dfir-delight.de/p/threat-reports/</link><pubDate>Wed, 04 Oct 2023 16:30:00 +0000</pubDate><guid>https://dfir-delight.de/p/threat-reports/</guid><description>&lt;img src="https://dfir-delight.de/p/threat-reports/cover.jpg" alt="Featured image of post Threat Reports" />&lt;p>Frequently, I come across poor threat / incident response reports that seem to prioritize self-promotion over delivering valuable and actionable information. Such reports often lack crucial parts to help others in defending themselves against these threats. After finding another bad threat recently, I decided to write a constructive blog post on how to read and write threat reports.&lt;/p>
+&lt;h1 id="tldr">TL;DR
+&lt;/h1>&lt;ul>
+&lt;li>Include an actionable management summary&lt;/li>
+&lt;li>Provide a comprehensive technical timeline&lt;/li>
+&lt;li>Utilize the &lt;a class="link" href="https://attack.mitre.org/" target="_blank" rel="noopener"
+>MITRE ATT&amp;amp;CK® framework&lt;/a>&lt;/li>
+&lt;li>Provide IOCs and use a standardized way to share them. For example via a &lt;a class="link" href="https://www.misp-project.org/" target="_blank" rel="noopener"
+>MISP&lt;/a>&lt;/li>
+&lt;li>Write Yara signatures&lt;/li>
+&lt;li>Write SIGMA signatures&lt;/li>
+&lt;li>Reference other reports about the same threat&lt;/li>
+&lt;li>Use a consistent Timezone, ideally UTC+0. In any case, specify the timezone you are using.&lt;/li>
+&lt;/ul>
+&lt;h1 id="what-is-a-threat-report-even">What is a threat report even?
+&lt;/h1>&lt;p>A threat report is a document or publication that provides detailed information about specific (current) cyber threats. These reports are typically authored by cybersecurity organizations, government agencies, or security vendors with the primary objective of keeping organizations and individuals well-informed about the latest threats in the cyber space. Most often these reports are published after an IR engagement. Hence, the report usually covers a single attack, or a set of attacks performed by the same threat actor. A threat report should not be confused with a report about a threat landscape, which has a bigger picture in mind. In this article, we will delve into the specifics of threat / incident response reports.&lt;/p>
+&lt;h1 id="contents-of-a-threat-report">Contents of a threat report
+&lt;/h1>&lt;h2 id="management-summary">Management Summary
+&lt;/h2>&lt;p>To kick things off, let&amp;rsquo;s address one of the often-overlooked but crucial elements missing in most threat reports: the management summary. Typically, these reports are tailored for a niche audience – those engaged in Digital Forensics and Incident Response (DFIR). Undoubtedly, the information contained therein is immensely valuable for this specific group, aiding them in fine-tuning their detection strategies for this specific attack. However, what if the incident responder reads the report and wants to prevent the attack in the future, for example by disabling Office macros or by rolling out a new security tool. The incident responder runs to the management, presents the report and urges them to action. Management looks at the report and the first sentence they see is something like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;&amp;lt;fancy name&amp;gt; (aka &amp;lt;more fancy names&amp;gt;) attacker group managed to infiltrate company XYZ by abusing
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;fancy vulnerability name&amp;gt; and deploying &amp;lt;fancy malware name&amp;gt;&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In such cases, the management may find it challenging to immediately grasp the gravity of the situation, given the technical jargon and intricacies presented upfront. This is precisely where an effective management summary comes into play, providing a concise yet comprehensive overview that bridges the gap between the technical details and the need for strategic decisions at a higher level within the organization. Instead of sounding all fancy and technically sophisticated in the first section, it should rather sound something like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;Company XYZ was hacked by an attacker due to bad patch management. The impact from the attack resulted in a halt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">of production for several days, which caused X million in damage for the company. The attack could have been
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">prevented through fast emergency patches.&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now management actually has a chance to understand what the report is trying to convey and what potential consequences could arise from the described threat.&lt;/p>
+&lt;p>A rule of thumb here: &lt;strong>If is sounds cool to you as an incident responder, management won&amp;rsquo;t understand it. If is sounds straightforward and plain, there is a higher chance that management will understand.&lt;/strong>&lt;/p>
+&lt;p>What should be included in a management summary:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Clarity and Simplicity&lt;/strong>: Write in a non-technical and easily comprehensible manner.&lt;/li>
+&lt;li>&lt;strong>Impact Assessment&lt;/strong>: Explain the impact or damage caused by the attack, and if possible, quantify it.&lt;/li>
+&lt;li>&lt;strong>Incident Overview&lt;/strong>: Provide a concise description of what occurred.&lt;/li>
+&lt;li>&lt;strong>Preventive Measures&lt;/strong>: Offer recommendations on how to prevent a similar incident in other organizations.&lt;/li>
+&lt;li>&lt;strong>Visualization&lt;/strong>: Include any necessary visual aids to illustrate the attack, making it more accessible to non-technical readers.&lt;/li>
+&lt;li>&lt;strong>Timeline&lt;/strong>: Optionally, include a high-level timeline to demonstrate how rapidly an attack can disrupt a company.&lt;/li>
+&lt;/ol>
+&lt;p>In 2022 I co-authored a threat report&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>[1]&lt;/a> on a threat actor called Emissary Panda, which was harvesting major vulnerabilities like ProxyLogon at that time and engaging in industrial espionage. Since we received a lot of positive feedback from Incident Responders and managers, I would like to show you some highlights of the report, starting with the management summary. The first page after the table of contents contains an abstract, which serves as a management summary. It adheres to the tips given above and contains a summary written in non-technical terms as well as easy to understand recommendations:&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda.png"
+width="1024"
+height="412"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_hu_2a8f11aeaddd822e.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_hu_cbd7999da933135b.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda: Recommendations [1]"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="596px"
+>&lt;/p>
+&lt;p>As you can see, the report even contains a link to a separate summary targeting management&lt;a class="link" href="https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/" target="_blank" rel="noopener"
+>[2]&lt;/a>. Furthermore, it contains easy to understand recommendations.&lt;/p>
+&lt;h2 id="technical-timeline">Technical Timeline
+&lt;/h2>&lt;p>Now that we&amp;rsquo;ve covered the management aspect in depth, let&amp;rsquo;s delve into the technical aspects of a threat report. Before we go into executed commands, used malware, and attacker infrastructure, the reader needs to gain an understanding of the attack. The report should provide that in form of visualization of the attack and technical timelines.&lt;/p>
+&lt;p>One publisher that often combines visualization and timeline in a single, beautiful image is &lt;a class="link" href="https://thedfirreport.com" target="_blank" rel="noopener"
+>The DFIR Report&lt;/a>. The following timeline was taken from one of their latest reports&lt;a class="link" href="https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/" target="_blank" rel="noopener"
+>[3]&lt;/a>. I love these timelines because they offer a quick overview as well as the most critical technical details of an attack.&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_TheDFIRReport.png"
+width="1024"
+height="888"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_TheDFIRReport_hu_e020ea562200f49e.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_TheDFIRReport_hu_f68275bb01e87c15.png 1024w"
+loading="lazy"
+alt="Threat Report “Collect, Exfiltrate, Sleep, Repeat” from The DFIR Report [3]"
+class="gallery-image"
+data-flex-grow="115"
+data-flex-basis="276px"
+>&lt;/p>
+&lt;p>Another approach to presenting a technical timeline is to separate the visualization from the actual timeline by placing it in a dedicated table. This is what we did in our report&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>[1]&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_1.png"
+width="1024"
+height="737"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_1_hu_e66afb1afd028e54.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_1_hu_626e75b380f88a13.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Timeline [1]"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="333px"
+>&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_2.png"
+width="1023"
+height="712"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_2_hu_9a086f37a47c1d8f.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_2_hu_c41025f8cd1bb200.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Timeline [1]"
+class="gallery-image"
+data-flex-grow="143"
+data-flex-basis="344px"
+>&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_3.png"
+width="1024"
+height="450"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_3_hu_a5cb77a1c30ce201.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_3_hu_2ffc63001caa1a23.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Timeline [1]"
+class="gallery-image"
+data-flex-grow="227"
+data-flex-basis="546px"
+>&lt;/p>
+&lt;h2 id="mapping-the-attack-to-mitre-attck">Mapping the attack to MITRE ATT&amp;amp;CK®
+&lt;/h2>&lt;p>The next section delves deeper into the technical aspects of the attack by leveraging the &lt;a class="link" href="https://attack.mitre.org/" target="_blank" rel="noopener"
+>MITRE ATT&amp;amp;CK® framework&lt;/a>. By aligning the analyzed attack with MITRE&amp;rsquo;s tactics and procedures, defenders can swiftly grasp the attack and determine how to detect or mitigate it within their environment. The report should include a MITRE map created with the &lt;a class="link" href="https://mitre-attack.github.io/attack-navigator/" target="_blank" rel="noopener"
+>MITRE ATT&amp;amp;CK® Navigator&lt;/a> as well as a detailed and technical description of each used technique.&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre.png"
+width="1024"
+height="741"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_hu_598b49fcdea3832c.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_hu_5c65791979391a63.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Mitre [1]"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="331px"
+>&lt;/p>
+&lt;p>The descriptions of the used techniques should have the highest level of technical details, including the tools used, command-lines, and more. Why? Let me illustrate that with an example from another threat report we released in 2021 about Lazarus&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf" target="_blank" rel="noopener"
+>[4]&lt;/a>, a North Korean threat actor:&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_technique.png"
+width="1024"
+height="352"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_technique_hu_c4f5234c258662c6.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_technique_hu_fe2f053672175846.png 1024w"
+loading="lazy"
+alt="Threat Report Lazarus - Mitre Technique Description [4]"
+class="gallery-image"
+data-flex-grow="290"
+data-flex-basis="698px"
+>&lt;/p>
+&lt;p>In that report, we disclosed the entire command-line, including the password used to decrypt the embedded payload. Approximately 1.5 years later, an incident responder from ESET encountered another attack from Lazarus, still employing the same malware. Although, the ESET researchers were not able to catch the password live from the command-line, they found our report and were able to decrypt the payload with the contained password used in the command-line &lt;a class="link" href="https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/" target="_blank" rel="noopener"
+>[5]&lt;/a>.&lt;/p>
+&lt;h2 id="detection">Detection
+&lt;/h2>&lt;p>A threat report should empower others to detect the same attack in their environment. This is typically accomplished by sharing Indicators of Compromise (IOCs) or detection signatures.&lt;/p>
+&lt;h3 id="indicators-of-compromise">Indicators of Compromise
+&lt;/h3>&lt;p>IOCs, as described in my &lt;a class="link" href="https://dfir-delight.de/glossary" target="_blank" rel="noopener"
+>Glossary&lt;/a>, encompass indicators such as filenames, hashes, URLs, domains, IPs, command lines, registry keys, and more. These indicators are crucial for detecting compromises or attacks.&lt;/p>
+&lt;p>However, sharing IOCs comes with several challenges, some of which I intend to explore in a dedicated blog post. For now, let me highlight the main issues associated with sharing IOCs:&lt;/p>
+&lt;ul>
+&lt;li>IOC types are only semi-standardized. The closest thing to a standardized format for IOCs can be found in the &lt;a class="link" href="https://www.misp-project.org/" target="_blank" rel="noopener"
+>MISP Project&lt;/a>. Since most people are still sharing indicators like its 1982, defenders still have to deal with poorly formatted tables in PDF and Excel sheets, and self-defined type names. You wouldn&amp;rsquo;t believe how many ways there are to title an IPv4 address: IP, IP4, IP-v4, IPv4, etc. An IPv4 address is still one of the easy types to title, now think about how you would title registry keys, command-lines or even scheduled tasks.&lt;/li>
+&lt;li>Many organization lack a way of automatically applying IOCs to their monitoring and detection tools.&lt;/li>
+&lt;li>IOCs that are true positives today may become obsolete tomorrow. IP addresses are reused, domains are taken down, and hashes of the same malware can change due to one changed byte in the malware.&lt;/li>
+&lt;li>Often, IOCs are shared without context or information about their relevance in a specific attack.&lt;/li>
+&lt;li>Some IOCs, although they might be used by an attacker as described, have a high false-positive rate. Especially when Windows filenames are used as a means of defense evasion.&lt;/li>
+&lt;/ul>
+&lt;p>Many of these challenges are addressed, at least partially, by the &lt;a class="link" href="https://www.misp-project.org/" target="_blank" rel="noopener"
+>MISP Project&lt;/a>. A MISP provides predefined IOC types, the option to tag IOCs to enhance them with additional information, and a standardized format for sharing with others. You can connect a MISP with other instances globally or simply export MISP events as a file for publication. This enables defenders to easily import the event, ensuring that the information is presented in a semi-standardized format that can be utilized within their organization via APIs.&lt;/p>
+&lt;p>Here are some key guidelines for sharing IOCs:&lt;/p>
+&lt;ul>
+&lt;li>If your IOCs are a picture, you are doing it wrong.&lt;/li>
+&lt;li>If some of your IOCs are spread over multiple lines, you are doing it wrong.&lt;/li>
+&lt;li>If your IOCs are only found in a PDF file, you are also doing it wrong.&lt;/li>
+&lt;li>At a minimum, you have to share the IOCs in a CSV with consistent type naming.&lt;/li>
+&lt;li>Even better is the creation and export of a MISP event.&lt;/li>
+&lt;li>Enrich your IOCs with metadata. Explain how, where, and when you discovered the IOC, its relevance in the attacker&amp;rsquo;s tactics, and whether it has a high false-positive rate.&lt;/li>
+&lt;li>Classify your IOCs with Traffic Light Protocol (TLP) markings so that others understand how to handle them.&lt;/li>
+&lt;/ul>
+&lt;p>As a defender, it&amp;rsquo;s essential to have a MISP system in place and established processes for automatically incorporating new IOCs into your detection tools.&lt;/p>
+&lt;h3 id="signatures">Signatures
+&lt;/h3>&lt;p>The most common format for sharing &lt;strong>detection signatures&lt;/strong> for &lt;strong>files&lt;/strong> is YARA. YARA offers a standard for writing detection rules along with a scanner that can apply these signatures to a file system. If you have detected malware samples or other suspicious files during your incident investigation, you should bundle that knowledge in YARA signatures and share it with the community. If you&amp;rsquo;re new to YARA, Florian Roth has provided excellent tutorials on how to write effective YARA signatures&lt;a class="link" href="https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/" target="_blank" rel="noopener"
+>[6]&lt;/a> &lt;a class="link" href="https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/" target="_blank" rel="noopener"
+>[7]&lt;/a> &lt;a class="link" href="https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282" target="_blank" rel="noopener"
+>[8]&lt;/a>.&lt;/p>
+&lt;p>For sharing detection signatures specific to logs, &lt;a class="link" href="https://github.com/SigmaHQ/sigma" target="_blank" rel="noopener"
+>SIGMA&lt;/a> is the way to go. It serves as a generic signature format for SIEM systems. To quote the SIGMA description from their repository:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;Sigma is for log files what Snort is for network traffic and YARA is for files.&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The repository already provides a wide array of open-source signatures for common attacker techniques, along with a converter for various SIEM systems.&lt;/p>
+&lt;p>Other signatures might include:&lt;/p>
+&lt;ul>
+&lt;li>Network-based signatures: &lt;a class="link" href="https://www.snort.org/" target="_blank" rel="noopener"
+>Snort&lt;/a> or &lt;a class="link" href="https://suricata.io/" target="_blank" rel="noopener"
+>Surricata&lt;/a>&lt;/li>
+&lt;li>EDR-specific hunting queries (e.g. Defender for Endpoint hunting queries written in KQL)&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-possible-contents-of-the-report">Other Possible Contents of the report
+&lt;/h2>&lt;p>In addition to the previously mentioned content, which should ideally be included in every threat report, there are several other valuable components that can enhance a threat report:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Malware analysis&lt;/strong>: This involves the thorough dissection and analysis of a malware sample to gain a deeper understanding of its functionality. Such analysis can provide insights into elements like Command and Control (C2) endpoints.&lt;/li>
+&lt;li>&lt;strong>Comparison to Previous Attacks by the Same Threat Actor&lt;/strong>: By comparing the current attack to past incidents attributed to the same threat actor, it becomes possible to identify changes in their techniques or tactics over time. This historical perspective can be invaluable for anticipating their future actions.&lt;/li>
+&lt;li>&lt;strong>Investigative Research&lt;/strong>: Conducting further research to uncover additional tools, infrastructure, malware samples, and other resources employed by the threat actor. This extended investigation helps in building a more comprehensive profile of the adversary&amp;rsquo;s capabilities and activities.&lt;/li>
+&lt;/ul>
+&lt;h1 id="resources">Resources
+&lt;/h1>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>[1]&lt;/a> &lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/" target="_blank" rel="noopener"
+>[2]&lt;/a> &lt;a class="link" href="https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/" target="_blank" rel="noopener"
+>https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/" target="_blank" rel="noopener"
+>[3]&lt;/a> &lt;a class="link" href="https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/" target="_blank" rel="noopener"
+>https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf" target="_blank" rel="noopener"
+>[4]&lt;/a> &lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf" target="_blank" rel="noopener"
+>https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/" target="_blank" rel="noopener"
+>[5]&lt;/a> &lt;a class="link" href="https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/" target="_blank" rel="noopener"
+>https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/" target="_blank" rel="noopener"
+>[6]&lt;/a> &lt;a class="link" href="https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/" target="_blank" rel="noopener"
+>https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/" target="_blank" rel="noopener"
+>[7]&lt;/a> &lt;a class="link" href="https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/" target="_blank" rel="noopener"
+>https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282" target="_blank" rel="noopener"
+>[8]&lt;/a> &lt;a class="link" href="https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282" target="_blank" rel="noopener"
+>https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761297.htm#page=2&amp;amp;query=psychedelic%20pattern&amp;amp;position=1&amp;amp;from_view=keyword&amp;amp;track=ais" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item></channel></rss>
