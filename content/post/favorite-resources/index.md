@@ -2,7 +2,7 @@
 title: My Favorite DFIR and Cybersecurity Resources
 description: A compilation of the sources from which I acquire news, updates, and new knowledge.
 slug: favorite-resources
-date: 2024-02-07 17:00:00+0000
+date: 2025-02-07 16:00:00+0000
 image: cover.jpg
 categories:
     - Overview
