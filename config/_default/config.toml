@@ -2,7 +2,7 @@
 #baseurl = "https://moettle.github.io" 
 baseurl = "https://dfir-delight.de"
 languageCode = "en-us"
-paginate = 5
+pagination.pagerSize = 5
 title = "DFIR Delight"
 
 # Theme i18n support
