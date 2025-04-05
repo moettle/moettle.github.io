@@ -2,7 +2,7 @@
 title: "The Heart of every Incident: Incident Coordination"
 description: Without effective coordination, major incidents cannot be resolved efficiently. This article explains why incident coordination is critical and outlines its key responsibilities.
 slug: incident-coordination
-date: 2025-02-08 12:00:00+0000
+date: 2025-04-05 15:30:00+0000
 image: cover.jpg
 categories:
     - Overview
