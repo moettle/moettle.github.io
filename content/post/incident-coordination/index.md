@@ -86,7 +86,7 @@ The reason why there are so many providers not able to offer incident coordinati
 * **Incident Response Experience**
   * It takes years of hands-on Incident response experience until you are able to lead major incidents like APTs, Ransomware or Bad Insiders
 * **Ability to Stay Calm Under Pressure**
-  * If the incident coordinator starts to panic, everbody is going to panic
+  * If the incident coordinator starts to panic, everybody is going to panic
   * If you have all the skills described above, keeping calm shouldn't be a problem :)
 
 # Conclusion
@@ -94,7 +94,7 @@ Now you know why Incident coordinators are rare. If you happen to find one, keep
 
 If you happen to be in the DACH region, we are training Incident Coordinators and Managers. So feel free to reach out.
 
-One final piece of advice: if you're selecting an Incident Response provider, always ask how they manage and coordinate an incident. If they don’t have a clear answer, you’re usually dealing with a forensics provider, not a true Incident Responsed. If you are looking for a forensics provider, this is fine. If you are looking for an Incident Response provider, you should keep looking.
+One final piece of advice: if you're selecting an Incident Response provider, always ask how they manage and coordinate an incident. If they don’t have a clear answer, you’re usually dealing with a forensics provider, not a true Incident Response. If you are looking for a forensics provider, this is fine. If you are looking for an Incident Response provider, you should keep looking.
 
 
 > Cover Image by [Freepik](https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761213.htm#from_element=detail_alsolike)
