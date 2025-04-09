@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Forensics on DFIR Delight</title><link>https://dfir-delight.de/tags/forensics/</link><description>Recent content in Forensics on DFIR Delight</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Feb 2025 16:00:00 +0000</lastBuildDate><atom:link href="https://dfir-delight.de/tags/forensics/index.xml" rel="self" type="application/rss+xml"/><item><title>My Favorite DFIR and Cybersecurity Resources</title><link>https://dfir-delight.de/p/favorite-resources/</link><pubDate>Fri, 07 Feb 2025 16:00:00 +0000</pubDate><guid>https://dfir-delight.de/p/favorite-resources/</guid><description>&lt;img src="https://dfir-delight.de/p/favorite-resources/cover.jpg" alt="Featured image of post My Favorite DFIR and Cybersecurity Resources" />&lt;h1 id="tldr">TL;DR
+&lt;/h1>&lt;p>&lt;a class="link" href="https://www.reddit.com/r/blueteamsec/" target="_blank" rel="noopener"
+>Reddit BlueTeamSec&lt;/a> and Twitter with the filters mentioned below, will provide you with most of the information you&amp;rsquo;ll need on a daily basis.&lt;/p>
+&lt;h1 id="introduction">Introduction
+&lt;/h1>&lt;p>Whether you are a novice or a seasoned professional in the field of DFIR, it is crucial to know reliable and comprehensive sources for obtaining information and staying updated. It is equally important to remain open to discovering new resources that can enhance your knowledge. If you have new sources, which are not yet in this list, just send me a message on Twitter or an email.&lt;/p>
+&lt;p>The following compilation has expanded in recent years and will continue to evolve in this rapidly changing domain. Some resources may be removed or replaced over time.&lt;/p>
+&lt;p>To gather the majority of my news, I prefer utilizing RSS feeds within my email application. This approach proves convenient as the news articles are delivered directly to my inbox, which I check on a daily basis. However, since not all resources offer RSS feeds and some are more interactive (such as Twitter), it becomes necessary to manually check these sources.&lt;/p>
+&lt;p>The sources comprise not only DFIR-related material but also a wide range of topics within the realm of cybersecurity. This includes defensive and offensive security, threat landscapes, cyber politics (with a focus on Europe), and more. As an Incident Responder, it is crucial to stay informed about the entire cybersecurity landscape. Relying solely on forensic blogs would provide a limited perspective. While you may possess excellent technical analysis skills for dissecting each system forensically, you would lack the contextual information about the attacks. Contextual information often offers valuable insights into the motivation, capabilities, and objectives of the attacks. For instance, considering the ongoing Ukraine war, attacks on critical infrastructure in Europe are currently more likely to originate from Russia compared to other countries like China or the US. This is not to imply that all attacks come from Russia, but rather that the circumstances increase the probability of such occurrences. Hence, it is important to stay updated about these circumstances and have the big picture in mind while responding to incidents.&lt;/p>
+&lt;h1 id="sources">Sources
+&lt;/h1>&lt;p>The following are some of my favorite sources. I added links to RSS feeds and Twitter wherever possible and useful, so you can easily subscribe to them.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Tags&lt;/th>
+&lt;th>RSS&lt;/th>
+&lt;th>Twitter&lt;/th>
+&lt;th>Note&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.reddit.com/r/blueteamsec/" target="_blank" rel="noopener"
+>Reddit BlueTeamSec&lt;/a>&lt;/td>
+&lt;td>Collection, IR, DF, TI, Vulns&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.reddit.com/r/blueteamsec/new.rss" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Best and most comprehensive collection of new articles and posts I know so far. That&amp;rsquo;s the first thing I check every day :)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://thedfirreport.com/" target="_blank" rel="noopener"
+>The DFIR Report&lt;/a>&lt;/td>
+&lt;td>Blog, DF, IR, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/TheDFIRReport" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Excellent and very detailed reports about current attacks.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://windowsir.blogspot.com/" target="_blank" rel="noopener"
+>Windows Incident Response&lt;/a>&lt;/td>
+&lt;td>Blog, DF&lt;/td>
+&lt;td>&lt;a class="link" href="https://windowsir.blogspot.com/feeds/posts/default" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>One of the best forensic blogs out there. Nothing else is to be expected by Harlan Carvey, the author of the books &amp;ldquo;Windows Forensic Analysis&amp;rdquo;, &amp;ldquo;Windows Registry Forensics&amp;rdquo;, and many more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.inversecos.com/" target="_blank" rel="noopener"
+>Inversecos&lt;/a>&lt;/td>
+&lt;td>Blog, IR, DF&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/inversecos" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Great DFIR blog covering various topics. Low volume but high quality :)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://cyb3rops.medium.com/" target="_blank" rel="noopener"
+>Cyb3erops&lt;/a>&lt;/td>
+&lt;td>Blog, IR, DF, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/cyb3rops" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Florian Roth, undoubtedly one of the biggest contributers to the cybersecurity community with projects like Thor, Sigma, Raccine, etc., frequently posts on Twitter. I would also recommend to follow him on Twitter to get the latest news.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://blogs.jpcert.or.jp/en/" target="_blank" rel="noopener"
+>JPCert&lt;/a>&lt;/td>
+&lt;td>CERT, DF, IR, MA&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/jpcert_en" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Many nice blog posts about a variety of cybersecurity topics.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.mandiant.com/resources/blog" target="_blank" rel="noopener"
+>Mandiant Blog&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/Mandiant" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Mandiant&amp;rsquo;s Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://blog.talosintelligence.com/" target="_blank" rel="noopener"
+>Cisco Talos Intelligence&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/TalosSecurity" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Ciscos&amp;rsquo; Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://unit42.paloaltonetworks.com/" target="_blank" rel="noopener"
+>Unit42&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/Unit42_Intel" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Palo Alto&amp;rsquo;s Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://securelist.com/" target="_blank" rel="noopener"
+>Securelist&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/Securelist" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Kaspersky&amp;rsquo;s Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank" rel="noopener"
+>CISA&lt;/a>&lt;/td>
+&lt;td>Advisory&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.cisa.gov/cybersecurity-advisories/all.xml" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/CISACyber" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Cybersecurity &amp;amp; Infrastructure Security Agency published daily advisories on vulnerabilities and more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://blog.badsectorlabs.com/" target="_blank" rel="noopener"
+>Bad Sector Labs Blog&lt;/a>&lt;/td>
+&lt;td>Offensive&lt;/td>
+&lt;td>&lt;a class="link" href="https://blog.badsectorlabs.com/feeds/all.atom.xml" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://x.com/badsectorlabs" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Great to get an overview of current offensive news, write-ups, tools and exploits.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.heise.de/security/" target="_blank" rel="noopener"
+>Heise Security&lt;/a>&lt;/td>
+&lt;td>GER, News&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.heise.de/security/rss/news-atom.xml" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/heisec" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Go to news feed in germany for all related IT Security topics. Usually not very technical and not directly related to DFIR.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://netzpolitik.org/" target="_blank" rel="noopener"
+>Netzpolitik.org&lt;/a>&lt;/td>
+&lt;td>GER, Politics&lt;/td>
+&lt;td>&lt;a class="link" href="https://netzpolitik.org/feed" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/netzpolitik_org" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>German site (somtimes also english articles) about digital freedom rights.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://krebsonsecurity.com/" target="_blank" rel="noopener"
+>Krebs on Security&lt;/a>&lt;/td>
+&lt;td>Blog&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Security news and investigations&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://securityaffairs.com/" target="_blank" rel="noopener"
+>Security Affairs&lt;/a>&lt;/td>
+&lt;td>News&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>News about all cybersecurity-related topics&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.vx-underground.org/" target="_blank" rel="noopener"
+>vx-underground&lt;/a>&lt;/td>
+&lt;td>Collection, MA&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/vxunderground" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Collection of malware samples and source codes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://darknetdiaries.com/" target="_blank" rel="noopener"
+>Darknet Diaries&lt;/a>&lt;/td>
+&lt;td>Podcast&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/DarknetDiaries" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Well researched stories in the realm of hacking and cyber security. One of my favorite podcasts in that area :)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Sandworm&lt;/td>
+&lt;td>Book&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&amp;ldquo;Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin&amp;rsquo;s Most Dangerous Hackers&amp;rdquo; is a great book and should be read by everyone working in cybersecurity.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="twitter">Twitter
+&lt;/h1>&lt;p>&lt;strong>This section is slightly deprecated since TweetDeck is not freely available anymore, and X is loosing importance. The search for tags still works.&lt;/strong>&lt;/p>
+&lt;p>One of the best platform to get the newest information about cybersecurity is Twitter. For a long time Twitter was the go-to platform for the whole community to share information and news about the newest attacks. Penetration testers share their newest tools and exploits, and threat analysts share their newest intel about current attacks. Since Musk has bought Twitter parts of the community moved to Mastodon or other platforms but still, Twitter is a platform rich in information on cybersecurity. The only thing you need to know is how to use it effectively.&lt;/p>
+&lt;p>Twitter lets you search for certain tags in their search field. The best tags on Twitter include:&lt;/p>
+&lt;ul>
+&lt;li>#CyberSecurity&lt;/li>
+&lt;li>#CyberSec&lt;/li>
+&lt;li>#InfoSec&lt;/li>
+&lt;li>#CyberAttacks&lt;/li>
+&lt;li>#DigitalSecurity&lt;/li>
+&lt;li>#CyberRisk&lt;/li>
+&lt;li>#DFIR&lt;/li>
+&lt;li>#IncidentResponse&lt;/li>
+&lt;li>#DigitalForensics&lt;/li>
+&lt;li>#BlueTeam&lt;/li>
+&lt;li>#DefensiveSecurity&lt;/li>
+&lt;li>#ThreatIntelligence&lt;/li>
+&lt;li>#ThreatIntel&lt;/li>
+&lt;li>#ThreatHunting&lt;/li>
+&lt;li>#ThreatAnalysis&lt;/li>
+&lt;li>#APT&lt;/li>
+&lt;li>#CTI&lt;/li>
+&lt;li>#OSINT&lt;/li>
+&lt;li>#SOC&lt;/li>
+&lt;li>#SIEM&lt;/li>
+&lt;li>#Yara&lt;/li>
+&lt;li>#0Day&lt;/li>
+&lt;li>#MalwareAnalysis&lt;/li>
+&lt;li>#Malware&lt;/li>
+&lt;li>#Ransomware&lt;/li>
+&lt;/ul>
+&lt;p>To bring Twitter&amp;rsquo;s tags to a next level, I use these tags on &lt;a class="link" href="https://tweetdeck.twitter.com/" target="_blank" rel="noopener"
+>TweetDeck&lt;/a> in different columns, as shown below:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Main feed&lt;/strong>: Getting news from the people I follow, which might not use tags at all. Note that you shouldn&amp;rsquo;t combine your private and your professional Twitter, otherwise this feed would be full of posts that distract you during work.&lt;/li>
+&lt;li>&lt;strong>General news about cybersecurity&lt;/strong>:
+&lt;ul>
+&lt;li>#CyberSecurity OR #CyberSec OR #InfoSec OR #CyberAttacks OR #DigitalSecurity OR #CyberRisk&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>DFIR-related posts&lt;/strong>:
+&lt;ul>
+&lt;li>#DFIR OR #IncidentResponse OR #DigitalForensics OR #BlueTeam OR #DefensiveSecurity&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>TI-related posts&lt;/strong>:
+&lt;ul>
+&lt;li>#ThreatIntelligence OR #ThreatIntel OR #ThreatHunting OR #ThreatAnalysis OR #Yara&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Optional: current topic you want to track like a new vulnerability&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://dfir-delight.de/p/favorite-resources/TweetDeck.png"
+width="1024"
+height="518"
+srcset="https://dfir-delight.de/p/favorite-resources/TweetDeck_hu_d7da4da1592a3a59.png 480w, https://dfir-delight.de/p/favorite-resources/TweetDeck_hu_b6179671cd074209.png 1024w"
+loading="lazy"
+alt="TweetDeck Example"
+class="gallery-image"
+data-flex-grow="197"
+data-flex-basis="474px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-vector/hand-drawn-groovy-psychedelic-background_18038192.htm#query=psychedelic%20pattern&amp;amp;position=1&amp;amp;from_view=keyword&amp;amp;track=ais" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>Black Basta - Insights from a Ransomware Response Assessment</title><link>https://dfir-delight.de/p/black-basta-iocs/</link><pubDate>Sun, 14 Apr 2024 11:30:00 +0000</pubDate><guid>https://dfir-delight.de/p/black-basta-iocs/</guid><description>&lt;img src="https://dfir-delight.de/p/black-basta-iocs/cover.jpg" alt="Featured image of post Black Basta - Insights from a Ransomware Response Assessment" />&lt;h1 id="black-bastas-clumsy-attack">Black Basta&amp;rsquo;s clumsy attack
+&lt;/h1>&lt;p>In a recent incident response assessment, our encounter with the ransomware group Black Basta shed light on their tactics. Although they were able to get initial access to a server system an early detection enabled us to contain and remediate the incident shortly after. What&amp;rsquo;s interesting are the activities performed by Black Basta during their brief presence on the compromised system. Forensic analysis provided us with invaluable insights, including high quality IOCs, which we recently published &lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>. Besides the forensics findings, this article shows once again that established ransomware groups often lack sophistication and can be protected against.&lt;/p>
+&lt;p>After gaining initial access, Black Basta attempted to deploy a beacon calling back to their C2 infrastructure. Since the server did not have direct access to the internet (outgoing traffic was very limited), the operator started to panic. In the following hour, the Black Basta operator tried various ways to reach their C2 infrastructure, thereby disclosing executed commands, IPs, as well as domains belonging to the C2 infrastructure. The attack showed similarities to the attack observed by TrendMicro &lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>[2]&lt;/a>&lt;/p>
+&lt;h1 id="iocs">IOCs
+&lt;/h1>&lt;p>You can find our published IOCs on our Github repository &lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>, which also includes an export of our MISP event with more detailed descriptions and tagging. Since our observed attack and the attack observed by TrendMicro showed various parallels, we included TrendMicro&amp;rsquo;s IOCs to provide a more comprehensive collection of Black Basta IOCs.&lt;/p>
+&lt;p>The following list of IPs and Domains have a very high certainty, since all of them were pinged while the operator was trying to get a connection to their C2 infrastructure. Since outgoing ICMP traffic was not allowed (unknown to the operator), they started to try out every C2 endpoint know to them. Very clumsly indeed but very fruitful for us :)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">45.11.183.110
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">198.244.135.245
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">91.134.207.30
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">37.10.71.143
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">170.130.165.44
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">15.204.170.49
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">79.132.135.149
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">170.130.165.132
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">79.132.130.60
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">91.134.187.17
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">144.202.38.240
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">198.27.121.195
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">151.80.52.32
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">webnubee.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">startupbuss.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">artspathgroup.net
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">buyblocknow.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">trailcosolutions.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We strongly recommend to block these IOCs and to implement appropriate detections based on our IOCs.&lt;/p>
+&lt;p>To receive our HvS IOCs automatically in the future, I recommend to subscribe to our unrestricted &lt;a class="link" href="https://misp.ir.hvs-consulting.de/feed/unrestricted/" target="_blank" rel="noopener"
+>MISP Feed&lt;/a>. This feed allows you to integrate our tagged IOCs in your MISP and enables you to automatically process and integrate these IOCs for detection and mitigation in your security solutions.&lt;/p>
+&lt;h1 id="resources">Resources
+&lt;/h1>&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>[1]&lt;/a>&lt;a class="link" href="https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta" target="_blank" rel="noopener"
+>https://github.com/hvs-consulting/ioc_signatures/tree/main/BlackBasta&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>[2]&lt;/a> &lt;a class="link" href="https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html" target="_blank" rel="noopener"
+>https://www.trendmicro.com/de_de/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761208.htm#&amp;amp;position=46&amp;amp;from_view=collections&amp;amp;uuid=dcbe476a-37f5-4321-baca-55efaff2416d" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>Threat Reports</title><link>https://dfir-delight.de/p/threat-reports/</link><pubDate>Wed, 04 Oct 2023 16:30:00 +0000</pubDate><guid>https://dfir-delight.de/p/threat-reports/</guid><description>&lt;img src="https://dfir-delight.de/p/threat-reports/cover.jpg" alt="Featured image of post Threat Reports" />&lt;p>Frequently, I come across poor threat / incident response reports that seem to prioritize self-promotion over delivering valuable and actionable information. Such reports often lack crucial parts to help others in defending themselves against these threats. After finding another bad threat recently, I decided to write a constructive blog post on how to read and write threat reports.&lt;/p>
+&lt;h1 id="tldr">TL;DR
+&lt;/h1>&lt;ul>
+&lt;li>Include an actionable management summary&lt;/li>
+&lt;li>Provide a comprehensive technical timeline&lt;/li>
+&lt;li>Utilize the &lt;a class="link" href="https://attack.mitre.org/" target="_blank" rel="noopener"
+>MITRE ATT&amp;amp;CK® framework&lt;/a>&lt;/li>
+&lt;li>Provide IOCs and use a standardized way to share them. For example via a &lt;a class="link" href="https://www.misp-project.org/" target="_blank" rel="noopener"
+>MISP&lt;/a>&lt;/li>
+&lt;li>Write Yara signatures&lt;/li>
+&lt;li>Write SIGMA signatures&lt;/li>
+&lt;li>Reference other reports about the same threat&lt;/li>
+&lt;li>Use a consistent Timezone, ideally UTC+0. In any case, specify the timezone you are using.&lt;/li>
+&lt;/ul>
+&lt;h1 id="what-is-a-threat-report-even">What is a threat report even?
+&lt;/h1>&lt;p>A threat report is a document or publication that provides detailed information about specific (current) cyber threats. These reports are typically authored by cybersecurity organizations, government agencies, or security vendors with the primary objective of keeping organizations and individuals well-informed about the latest threats in the cyber space. Most often these reports are published after an IR engagement. Hence, the report usually covers a single attack, or a set of attacks performed by the same threat actor. A threat report should not be confused with a report about a threat landscape, which has a bigger picture in mind. In this article, we will delve into the specifics of threat / incident response reports.&lt;/p>
+&lt;h1 id="contents-of-a-threat-report">Contents of a threat report
+&lt;/h1>&lt;h2 id="management-summary">Management Summary
+&lt;/h2>&lt;p>To kick things off, let&amp;rsquo;s address one of the often-overlooked but crucial elements missing in most threat reports: the management summary. Typically, these reports are tailored for a niche audience – those engaged in Digital Forensics and Incident Response (DFIR). Undoubtedly, the information contained therein is immensely valuable for this specific group, aiding them in fine-tuning their detection strategies for this specific attack. However, what if the incident responder reads the report and wants to prevent the attack in the future, for example by disabling Office macros or by rolling out a new security tool. The incident responder runs to the management, presents the report and urges them to action. Management looks at the report and the first sentence they see is something like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;&amp;lt;fancy name&amp;gt; (aka &amp;lt;more fancy names&amp;gt;) attacker group managed to infiltrate company XYZ by abusing
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;fancy vulnerability name&amp;gt; and deploying &amp;lt;fancy malware name&amp;gt;&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In such cases, the management may find it challenging to immediately grasp the gravity of the situation, given the technical jargon and intricacies presented upfront. This is precisely where an effective management summary comes into play, providing a concise yet comprehensive overview that bridges the gap between the technical details and the need for strategic decisions at a higher level within the organization. Instead of sounding all fancy and technically sophisticated in the first section, it should rather sound something like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;Company XYZ was hacked by an attacker due to bad patch management. The impact from the attack resulted in a halt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">of production for several days, which caused X million in damage for the company. The attack could have been
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">prevented through fast emergency patches.&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now management actually has a chance to understand what the report is trying to convey and what potential consequences could arise from the described threat.&lt;/p>
+&lt;p>A rule of thumb here: &lt;strong>If is sounds cool to you as an incident responder, management won&amp;rsquo;t understand it. If is sounds straightforward and plain, there is a higher chance that management will understand.&lt;/strong>&lt;/p>
+&lt;p>What should be included in a management summary:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Clarity and Simplicity&lt;/strong>: Write in a non-technical and easily comprehensible manner.&lt;/li>
+&lt;li>&lt;strong>Impact Assessment&lt;/strong>: Explain the impact or damage caused by the attack, and if possible, quantify it.&lt;/li>
+&lt;li>&lt;strong>Incident Overview&lt;/strong>: Provide a concise description of what occurred.&lt;/li>
+&lt;li>&lt;strong>Preventive Measures&lt;/strong>: Offer recommendations on how to prevent a similar incident in other organizations.&lt;/li>
+&lt;li>&lt;strong>Visualization&lt;/strong>: Include any necessary visual aids to illustrate the attack, making it more accessible to non-technical readers.&lt;/li>
+&lt;li>&lt;strong>Timeline&lt;/strong>: Optionally, include a high-level timeline to demonstrate how rapidly an attack can disrupt a company.&lt;/li>
+&lt;/ol>
+&lt;p>In 2022 I co-authored a threat report&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>[1]&lt;/a> on a threat actor called Emissary Panda, which was harvesting major vulnerabilities like ProxyLogon at that time and engaging in industrial espionage. Since we received a lot of positive feedback from Incident Responders and managers, I would like to show you some highlights of the report, starting with the management summary. The first page after the table of contents contains an abstract, which serves as a management summary. It adheres to the tips given above and contains a summary written in non-technical terms as well as easy to understand recommendations:&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda.png"
+width="1024"
+height="412"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_hu_2a8f11aeaddd822e.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_hu_cbd7999da933135b.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda: Recommendations [1]"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="596px"
+>&lt;/p>
+&lt;p>As you can see, the report even contains a link to a separate summary targeting management&lt;a class="link" href="https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/" target="_blank" rel="noopener"
+>[2]&lt;/a>. Furthermore, it contains easy to understand recommendations.&lt;/p>
+&lt;h2 id="technical-timeline">Technical Timeline
+&lt;/h2>&lt;p>Now that we&amp;rsquo;ve covered the management aspect in depth, let&amp;rsquo;s delve into the technical aspects of a threat report. Before we go into executed commands, used malware, and attacker infrastructure, the reader needs to gain an understanding of the attack. The report should provide that in form of visualization of the attack and technical timelines.&lt;/p>
+&lt;p>One publisher that often combines visualization and timeline in a single, beautiful image is &lt;a class="link" href="https://thedfirreport.com" target="_blank" rel="noopener"
+>The DFIR Report&lt;/a>. The following timeline was taken from one of their latest reports&lt;a class="link" href="https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/" target="_blank" rel="noopener"
+>[3]&lt;/a>. I love these timelines because they offer a quick overview as well as the most critical technical details of an attack.&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_TheDFIRReport.png"
+width="1024"
+height="888"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_TheDFIRReport_hu_e020ea562200f49e.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_TheDFIRReport_hu_f68275bb01e87c15.png 1024w"
+loading="lazy"
+alt="Threat Report “Collect, Exfiltrate, Sleep, Repeat” from The DFIR Report [3]"
+class="gallery-image"
+data-flex-grow="115"
+data-flex-basis="276px"
+>&lt;/p>
+&lt;p>Another approach to presenting a technical timeline is to separate the visualization from the actual timeline by placing it in a dedicated table. This is what we did in our report&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>[1]&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_1.png"
+width="1024"
+height="737"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_1_hu_e66afb1afd028e54.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_1_hu_626e75b380f88a13.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Timeline [1]"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="333px"
+>&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_2.png"
+width="1023"
+height="712"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_2_hu_9a086f37a47c1d8f.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_2_hu_c41025f8cd1bb200.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Timeline [1]"
+class="gallery-image"
+data-flex-grow="143"
+data-flex-basis="344px"
+>&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_3.png"
+width="1024"
+height="450"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_3_hu_a5cb77a1c30ce201.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Timeline_3_hu_2ffc63001caa1a23.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Timeline [1]"
+class="gallery-image"
+data-flex-grow="227"
+data-flex-basis="546px"
+>&lt;/p>
+&lt;h2 id="mapping-the-attack-to-mitre-attck">Mapping the attack to MITRE ATT&amp;amp;CK®
+&lt;/h2>&lt;p>The next section delves deeper into the technical aspects of the attack by leveraging the &lt;a class="link" href="https://attack.mitre.org/" target="_blank" rel="noopener"
+>MITRE ATT&amp;amp;CK® framework&lt;/a>. By aligning the analyzed attack with MITRE&amp;rsquo;s tactics and procedures, defenders can swiftly grasp the attack and determine how to detect or mitigate it within their environment. The report should include a MITRE map created with the &lt;a class="link" href="https://mitre-attack.github.io/attack-navigator/" target="_blank" rel="noopener"
+>MITRE ATT&amp;amp;CK® Navigator&lt;/a> as well as a detailed and technical description of each used technique.&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre.png"
+width="1024"
+height="741"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_hu_598b49fcdea3832c.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_hu_5c65791979391a63.png 1024w"
+loading="lazy"
+alt="Threat Report Emissary Panda - Mitre [1]"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="331px"
+>&lt;/p>
+&lt;p>The descriptions of the used techniques should have the highest level of technical details, including the tools used, command-lines, and more. Why? Let me illustrate that with an example from another threat report we released in 2021 about Lazarus&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf" target="_blank" rel="noopener"
+>[4]&lt;/a>, a North Korean threat actor:&lt;/p>
+&lt;p>&lt;img src="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_technique.png"
+width="1024"
+height="352"
+srcset="https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_technique_hu_c4f5234c258662c6.png 480w, https://dfir-delight.de/p/threat-reports/Threat_Report_Emissary_panda_Mitre_technique_hu_fe2f053672175846.png 1024w"
+loading="lazy"
+alt="Threat Report Lazarus - Mitre Technique Description [4]"
+class="gallery-image"
+data-flex-grow="290"
+data-flex-basis="698px"
+>&lt;/p>
+&lt;p>In that report, we disclosed the entire command-line, including the password used to decrypt the embedded payload. Approximately 1.5 years later, an incident responder from ESET encountered another attack from Lazarus, still employing the same malware. Although, the ESET researchers were not able to catch the password live from the command-line, they found our report and were able to decrypt the payload with the contained password used in the command-line &lt;a class="link" href="https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/" target="_blank" rel="noopener"
+>[5]&lt;/a>.&lt;/p>
+&lt;h2 id="detection">Detection
+&lt;/h2>&lt;p>A threat report should empower others to detect the same attack in their environment. This is typically accomplished by sharing Indicators of Compromise (IOCs) or detection signatures.&lt;/p>
+&lt;h3 id="indicators-of-compromise">Indicators of Compromise
+&lt;/h3>&lt;p>IOCs, as described in my &lt;a class="link" href="https://dfir-delight.de/glossary" target="_blank" rel="noopener"
+>Glossary&lt;/a>, encompass indicators such as filenames, hashes, URLs, domains, IPs, command lines, registry keys, and more. These indicators are crucial for detecting compromises or attacks.&lt;/p>
+&lt;p>However, sharing IOCs comes with several challenges, some of which I intend to explore in a dedicated blog post. For now, let me highlight the main issues associated with sharing IOCs:&lt;/p>
+&lt;ul>
+&lt;li>IOC types are only semi-standardized. The closest thing to a standardized format for IOCs can be found in the &lt;a class="link" href="https://www.misp-project.org/" target="_blank" rel="noopener"
+>MISP Project&lt;/a>. Since most people are still sharing indicators like its 1982, defenders still have to deal with poorly formatted tables in PDF and Excel sheets, and self-defined type names. You wouldn&amp;rsquo;t believe how many ways there are to title an IPv4 address: IP, IP4, IP-v4, IPv4, etc. An IPv4 address is still one of the easy types to title, now think about how you would title registry keys, command-lines or even scheduled tasks.&lt;/li>
+&lt;li>Many organization lack a way of automatically applying IOCs to their monitoring and detection tools.&lt;/li>
+&lt;li>IOCs that are true positives today may become obsolete tomorrow. IP addresses are reused, domains are taken down, and hashes of the same malware can change due to one changed byte in the malware.&lt;/li>
+&lt;li>Often, IOCs are shared without context or information about their relevance in a specific attack.&lt;/li>
+&lt;li>Some IOCs, although they might be used by an attacker as described, have a high false-positive rate. Especially when Windows filenames are used as a means of defense evasion.&lt;/li>
+&lt;/ul>
+&lt;p>Many of these challenges are addressed, at least partially, by the &lt;a class="link" href="https://www.misp-project.org/" target="_blank" rel="noopener"
+>MISP Project&lt;/a>. A MISP provides predefined IOC types, the option to tag IOCs to enhance them with additional information, and a standardized format for sharing with others. You can connect a MISP with other instances globally or simply export MISP events as a file for publication. This enables defenders to easily import the event, ensuring that the information is presented in a semi-standardized format that can be utilized within their organization via APIs.&lt;/p>
+&lt;p>Here are some key guidelines for sharing IOCs:&lt;/p>
+&lt;ul>
+&lt;li>If your IOCs are a picture, you are doing it wrong.&lt;/li>
+&lt;li>If some of your IOCs are spread over multiple lines, you are doing it wrong.&lt;/li>
+&lt;li>If your IOCs are only found in a PDF file, you are also doing it wrong.&lt;/li>
+&lt;li>At a minimum, you have to share the IOCs in a CSV with consistent type naming.&lt;/li>
+&lt;li>Even better is the creation and export of a MISP event.&lt;/li>
+&lt;li>Enrich your IOCs with metadata. Explain how, where, and when you discovered the IOC, its relevance in the attacker&amp;rsquo;s tactics, and whether it has a high false-positive rate.&lt;/li>
+&lt;li>Classify your IOCs with Traffic Light Protocol (TLP) markings so that others understand how to handle them.&lt;/li>
+&lt;/ul>
+&lt;p>As a defender, it&amp;rsquo;s essential to have a MISP system in place and established processes for automatically incorporating new IOCs into your detection tools.&lt;/p>
+&lt;h3 id="signatures">Signatures
+&lt;/h3>&lt;p>The most common format for sharing &lt;strong>detection signatures&lt;/strong> for &lt;strong>files&lt;/strong> is YARA. YARA offers a standard for writing detection rules along with a scanner that can apply these signatures to a file system. If you have detected malware samples or other suspicious files during your incident investigation, you should bundle that knowledge in YARA signatures and share it with the community. If you&amp;rsquo;re new to YARA, Florian Roth has provided excellent tutorials on how to write effective YARA signatures&lt;a class="link" href="https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/" target="_blank" rel="noopener"
+>[6]&lt;/a> &lt;a class="link" href="https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/" target="_blank" rel="noopener"
+>[7]&lt;/a> &lt;a class="link" href="https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282" target="_blank" rel="noopener"
+>[8]&lt;/a>.&lt;/p>
+&lt;p>For sharing detection signatures specific to logs, &lt;a class="link" href="https://github.com/SigmaHQ/sigma" target="_blank" rel="noopener"
+>SIGMA&lt;/a> is the way to go. It serves as a generic signature format for SIEM systems. To quote the SIGMA description from their repository:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;Sigma is for log files what Snort is for network traffic and YARA is for files.&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The repository already provides a wide array of open-source signatures for common attacker techniques, along with a converter for various SIEM systems.&lt;/p>
+&lt;p>Other signatures might include:&lt;/p>
+&lt;ul>
+&lt;li>Network-based signatures: &lt;a class="link" href="https://www.snort.org/" target="_blank" rel="noopener"
+>Snort&lt;/a> or &lt;a class="link" href="https://suricata.io/" target="_blank" rel="noopener"
+>Surricata&lt;/a>&lt;/li>
+&lt;li>EDR-specific hunting queries (e.g. Defender for Endpoint hunting queries written in KQL)&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-possible-contents-of-the-report">Other Possible Contents of the report
+&lt;/h2>&lt;p>In addition to the previously mentioned content, which should ideally be included in every threat report, there are several other valuable components that can enhance a threat report:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Malware analysis&lt;/strong>: This involves the thorough dissection and analysis of a malware sample to gain a deeper understanding of its functionality. Such analysis can provide insights into elements like Command and Control (C2) endpoints.&lt;/li>
+&lt;li>&lt;strong>Comparison to Previous Attacks by the Same Threat Actor&lt;/strong>: By comparing the current attack to past incidents attributed to the same threat actor, it becomes possible to identify changes in their techniques or tactics over time. This historical perspective can be invaluable for anticipating their future actions.&lt;/li>
+&lt;li>&lt;strong>Investigative Research&lt;/strong>: Conducting further research to uncover additional tools, infrastructure, malware samples, and other resources employed by the threat actor. This extended investigation helps in building a more comprehensive profile of the adversary&amp;rsquo;s capabilities and activities.&lt;/li>
+&lt;/ul>
+&lt;h1 id="resources">Resources
+&lt;/h1>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>[1]&lt;/a> &lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf" target="_blank" rel="noopener"
+>https://www.hvs-consulting.de/public/ThreatReport-EmissaryPanda.pdf&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/" target="_blank" rel="noopener"
+>[2]&lt;/a> &lt;a class="link" href="https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/" target="_blank" rel="noopener"
+>https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/" target="_blank" rel="noopener"
+>[3]&lt;/a> &lt;a class="link" href="https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/" target="_blank" rel="noopener"
+>https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf" target="_blank" rel="noopener"
+>[4]&lt;/a> &lt;a class="link" href="https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf" target="_blank" rel="noopener"
+>https://www.hvs-consulting.de/public/ThreatReport-Lazarus.pdf&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/" target="_blank" rel="noopener"
+>[5]&lt;/a> &lt;a class="link" href="https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/" target="_blank" rel="noopener"
+>https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/" target="_blank" rel="noopener"
+>[6]&lt;/a> &lt;a class="link" href="https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/" target="_blank" rel="noopener"
+>https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/" target="_blank" rel="noopener"
+>[7]&lt;/a> &lt;a class="link" href="https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/" target="_blank" rel="noopener"
+>https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282" target="_blank" rel="noopener"
+>[8]&lt;/a> &lt;a class="link" href="https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282" target="_blank" rel="noopener"
+>https://cyb3rops.medium.com/how-to-post-process-yara-rules-generated-by-yargen-121d29322282&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761297.htm#page=2&amp;amp;query=psychedelic%20pattern&amp;amp;position=1&amp;amp;from_view=keyword&amp;amp;track=ais" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>DFIR Glossary</title><link>https://dfir-delight.de/p/dfir-glossary/</link><pubDate>Wed, 27 Sep 2023 16:00:00 +0000</pubDate><guid>https://dfir-delight.de/p/dfir-glossary/</guid><description>&lt;img src="https://dfir-delight.de/p/dfir-glossary/cover.jpg" alt="Featured image of post DFIR Glossary" />&lt;p>Personally, I dislike it when people use abbreviations as if they are universally understood. More often than not, half of the people in a meeting won&amp;rsquo;t even know what an abbreviation means, but nobody would dare to ask. Furthermore, it is nearly impossible for newcomers to grasp a topic when people consistently use abbreviations without explaining them. You can ask any employee of a company with more than 50,000 employees how much they appreciate abbreviations. Every department tends to have its own set of abbreviations, and company-wide, most abbreviations aren&amp;rsquo;t even unique. Okay, enough complaining about abbreviations; I think you&amp;rsquo;ve got the idea.&lt;/p>
+&lt;p>While I&amp;rsquo;ve expressed my frustration with abbreviations, this article aims to provide an introduction to the most commonly used terms in Digital Forensics and Incident Response (DFIR). Oh wow, it&amp;rsquo;s not that difficult to write out an abbreviation, is it? The article also serves the purpose of defining terms that might have multiple meanings in different companies, countries, vendors, etc.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Term&lt;/th>
+&lt;th>Explanation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Active Directory (AD)&lt;/td>
+&lt;td>Microsoft&amp;rsquo;s solution for managing an on-premises Microsoft enterprise environment.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Advanced Persistent Threat (APT)&lt;/td>
+&lt;td>A sophisticated threat actor, often state-sponsored, performing elaborate attacks on selected targets with the goal of espionage, financial gain, or sabotage / destruction. These attacks are often carried out stealthily over an extended period (months to years). Due to the substantial financial and personnel resources of these threat actors, they are highly dangerous and challenging to defend against.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alternate Data Stream (ADS)&lt;/td>
+&lt;td>A file attribute in the NTFS file system, often used to hide data from detection.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Antivirus (AV)&lt;/td>
+&lt;td>A program designed to detect and prevent malware on endpoints.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Azure Active Directory (AAD)&lt;/td>
+&lt;td>Microsoft&amp;rsquo;s solution for managing a Microsoft cloud environment, now renamed to Microsoft Entra ID.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Blue Team&lt;/td>
+&lt;td>The team responsible for defending an organization. The term is also used during simulations, where a red team simulates an attack, and a blue team defends against it.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Command and Control (C2, C&amp;amp;C)&lt;/td>
+&lt;td>A method for threat actors to remotely control a compromised system over the network. C2 typically involves a compromised system and a C2 server for control, often using simple HTTP or HTTPS channels to evade detection among an organization&amp;rsquo;s usual network traffic.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Computer Emergency Response Team (CERT)&lt;/td>
+&lt;td>A team of security experts specialized in handling cyberattacks and security incidents, which may not be limited to organizations; some countries have their own CERTs, and even the EU has one.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Computer Security Incident Response Team (CSIRT)&lt;/td>
+&lt;td>Sometimes used as a synonym for CERT, but also refers to a dedicated team that exists primarily during major incidents, whereas CERTs are active in daily operations. Definitions may vary among organizations.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Confidentiality, Integrity, Availability (CIA)&lt;/td>
+&lt;td>Protective goals originating from Information Security.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Containment&lt;/td>
+&lt;td>The act of slowing down or stopping an attacker to limit further impact and damage, typically initiated early after detecting an attack or when attackers become active again during Incident Response. The range of containment measures will be covered in a future post.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cyber Threat Intelligence (CTI)&lt;/td>
+&lt;td>See TI (Threat Intelligence).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Domain Controller (DC)&lt;/td>
+&lt;td>A server responsible for processing authentication requests within an Active Directory (AD).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Deception&lt;/td>
+&lt;td>A category of security solutions aimed at detecting attackers by deceiving them, such as internal honeypots.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Denial-of-Service (DOS)&lt;/td>
+&lt;td>An attack with the goal of disrupting the availability of a system or service, often achieved by flooding the server with requests.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Digital Forensics (DF)&lt;/td>
+&lt;td>The act of analyzing digital evidence to reach investigative goals, which can range from presenting results in court to understanding a cyberattack.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Digital Forensics and Incident Response (DFIR)&lt;/td>
+&lt;td>A broad term used to describe the field encompassing digital forensic analysis and Incident Response.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Distributed Denial-of-Service (DDOS)&lt;/td>
+&lt;td>A DOS attack where the flooding comes from multiple systems, commonly achieved through request amplification or bot networks.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Endpoint Detection &amp;amp; Response (EDR)&lt;/td>
+&lt;td>A security tool that detects threats and unusual behavior on endpoints and enables a company to respond effectively to alerts. EDR collects all endpoint events centrally and offers response features like isolation, containment, live response, and more, surpassing traditional antivirus solutions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Entra ID&lt;/td>
+&lt;td>See Azure Active Directory (AAD)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Evidence Acquisition&lt;/td>
+&lt;td>The process of collecting evidence for later forensic analysis, including disk images, memory images, triage packages, log files, single artifacts, malware samples, and more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Extended Detection and Response (XDR)&lt;/td>
+&lt;td>A marketing term for EDR (Endpoint Detection &amp;amp; Response).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Honeypot (internal)&lt;/td>
+&lt;td>An internal honeypot acts as an enticing target for attackers to deceive them. Access to such a honeypot is monitored, and the security team is alerted when access occurs. Examples include systems with vulnerabilities or open file shares.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Incident Response (IR)&lt;/td>
+&lt;td>The act of responding to cyber security incidents.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Indicator of Compromise (IOC)&lt;/td>
+&lt;td>Indicators used for detecting a compromise, typically specific to a single attack or attacker group. IOCs can include filenames, hashes, URLs, domains, IPs, command lines, registry keys, and more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Information Security (IS)&lt;/td>
+&lt;td>Focused on protecting information related to CIA (Confidentiality, Integrity, Availability) within an organization.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Information Security Management System (ISMS)&lt;/td>
+&lt;td>A framework for managing an organization&amp;rsquo;s sensitive data related to CIA, using a set of policies and procedures.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Information Security Operations Center (ISOC)&lt;/td>
+&lt;td>See SOC (Security Operation Center).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Intrusion Detection System (IDS)&lt;/td>
+&lt;td>A system monitoring the network for malicious activity and triggering alerts.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Intrusion Prevention System (IPS)&lt;/td>
+&lt;td>An IDS that also attempts to block detected malicious activity.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>KAPE&lt;/td>
+&lt;td>A valuable tool for creating triage packages from Windows systems.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Malware Analysis&lt;/td>
+&lt;td>The process of analyzing a malware sample to understand its functionality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network Detection and Response (NDR)&lt;/td>
+&lt;td>A solution continuously monitoring the network for threats and offering network-level response actions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network Operation Center (NOC)&lt;/td>
+&lt;td>A team that monitors the network traffic of an organization. Many organizations don&amp;rsquo;t have a NOC anymore but rather a monitoring team in general or a SIEM team, which also covers network monitoring. Since network monitoring is only a part of a complete monitoring strategy, it often resolves in a large monitoring team.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network Security Monitoring (NSM)&lt;/td>
+&lt;td>The continuous monitoring of network traffic to detect malicious activity.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>NT File System (NTFS)&lt;/td>
+&lt;td>A proprietary file system used by Windows.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Privileged Access Workstation (PAW)&lt;/td>
+&lt;td>A dedicated workstation for administrative tasks, with added hardening to make it more resistant to admin account takeovers and lateral movement by attackers.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Purple Team&lt;/td>
+&lt;td>A collaboration between a blue team (defense) and a red team (offense) working together in a coordinated manner.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Red Team&lt;/td>
+&lt;td>A team responsible for offensive work, often involved in security assessments or attack simulations to test an organization&amp;rsquo;s existing defense and detection mechanisms.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Remediation&lt;/td>
+&lt;td>The act of mitigating an attack after it has occurred, aiming to regain control over the infrastructure, remove attackers from systems, and return to normal operations. Forensics analysis is essential for defining effective remediation measures, which may include reinstalling compromised systems, changing passwords on abused accounts, or enhancing security to prevent the same incident in the future.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Reverse Engineering (RE)&lt;/td>
+&lt;td>Part of malware analysis, involving reconstructing the original source code of a compiled malware sample to understand its functionality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security Incident Management Process (SIMP)&lt;/td>
+&lt;td>A process defining the handling and management of security incidents within an organization, with templates available in ISO 27035, SANS, and NIST standards.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security Information and Event Management (SIEM)&lt;/td>
+&lt;td>A solution helping companies detect and analyze security incidents by centrally collecting various logs, standardizing them, and generating alerts based on predefined signatures.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security Operation Center (SOC)&lt;/td>
+&lt;td>In larger organizations, a SOC is often the first level to handle incoming security alerts, often managed by a higher entity like a CERT.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SIGMA&lt;/td>
+&lt;td>An excellent GitHub project providing SIEM signatures in a generic format.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tactics, Techniques, and Procedures (TTP)&lt;/td>
+&lt;td>Behaviors of threat actors during an attack, defined by MITRE ATT&amp;amp;CK®, a database cataloging tactics and techniques used by attackers.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thor&lt;/td>
+&lt;td>An IOC scanner specialized in detecting traces of attacks on endpoints, offering over 10,000 signatures and various modules for system scanning. A free variant, Thor-lite, is also available.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Threat Intelligence (TI)&lt;/td>
+&lt;td>The process of gathering information about current cyber threats and risks, utilized for prevention, detection, or response to incidents within an organization.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Threat Hunting&lt;/td>
+&lt;td>The proactive search for traces of attacks within an organization, often initiated by new reports, ideas for identifying attackers, or management concerns. Threat hunting is commonly performed in EDR or SIEM systems.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Traffic Light Protocol (TLP)&lt;/td>
+&lt;td>TLP is a tagging system for shared information specifying sharing options for recipients. It includes four labels: TLP:RED (For recipient only), TLP:AMBER (Limited disclosure, e.g., within the organization), TLP:GREEN (Limited disclosure, e.g., within a community), and TLP:CLEAR (No limitations, shared information can be published).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Windows Event Forwarding (WEF)&lt;/td>
+&lt;td>The forwarding of Windows Event logs to a central server, which is supported by Windows by default and is for free, making it an excellent way to collect all Windows Event Logs in one place, simplifying log management.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>YARA (Yet Another Ridiculous Acronym)&lt;/td>
+&lt;td>YARA provides a standard for writing detection signatures and offers a scanner to apply them to files or directories, serving as the de-facto standard for signature writing for files.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761198.htm#&amp;amp;position=37&amp;amp;from_view=collections" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item></channel></rss>

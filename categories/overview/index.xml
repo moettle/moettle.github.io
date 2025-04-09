@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Overview on DFIR Delight</title><link>https://dfir-delight.de/categories/overview/</link><description>Recent content in Overview on DFIR Delight</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 05 Apr 2025 15:30:00 +0000</lastBuildDate><atom:link href="https://dfir-delight.de/categories/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>The Heart of every Incident: Incident Coordination</title><link>https://dfir-delight.de/p/incident-coordination/</link><pubDate>Sat, 05 Apr 2025 15:30:00 +0000</pubDate><guid>https://dfir-delight.de/p/incident-coordination/</guid><description>&lt;img src="https://dfir-delight.de/p/incident-coordination/cover.jpg" alt="Featured image of post The Heart of every Incident: Incident Coordination" />&lt;h1 id="introduction">Introduction
+&lt;/h1>&lt;p>Surprised? Let me guess—you thought forensics was the heart of every incident response. While forensics is a crucial part of Incident response, it is definitely not its heart. The following article makes it clear why.&lt;/p>
+&lt;p>Too often, I’m thrown into an ongoing incident where an &amp;ldquo;Incident Response Provider&amp;rdquo; is already involved. So why would the customer bring in a second incident response provider if one is already on board?&lt;/p>
+&lt;p>The first thing I do, when I get thrown in such an incident, is test the waters with a few simple questions:&lt;/p>
+&lt;ul>
+&lt;li>What are the ongoing tasks and who is responsible for them?&lt;/li>
+&lt;li>Where is the current situational overview, and who is updating it?&lt;/li>
+&lt;li>Are there established working streams?&lt;/li>
+&lt;li>Where are the results of the different working streams documented?&lt;/li>
+&lt;/ul>
+&lt;p>When I’m met with blank stares, I immediately know what’s happening: the so-called &amp;ldquo;Incident Response Provider&amp;rdquo; is just another forensics provider. They are selling forensic analysis as incident response while neglecting the most critical part—incident coordination.&lt;/p>
+&lt;p>Before diving into what incident coordination entails, let’s first discuss the fundamental building blocks of incident response.&lt;/p>
+&lt;h1 id="the-building-blocks-of-incident-response">The Building Blocks of Incident Response
+&lt;/h1>&lt;p>Every incident response effort consists of several key building blocks, also often called working streams. Basically teams working a specific part of the IR assessment:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Incident Coordination&lt;/strong>
+&lt;ul>
+&lt;li>The glue that holds everything together, ensuring all aspects of the response function smoothly. That&amp;rsquo;s why I called in the heart of every incident.&lt;/li>
+&lt;li>Assigning responsibilities&lt;/li>
+&lt;li>Assigning and tracking tasks&lt;/li>
+&lt;li>Keeping all teams aligned&lt;/li>
+&lt;li>More details in the next section&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Digital forensics&lt;/strong>
+&lt;ul>
+&lt;li>Evidence Acquisition&lt;/li>
+&lt;li>Performing forensic analysis&lt;/li>
+&lt;li>Assessing the extent of the attack&lt;/li>
+&lt;li>Identifying attacker tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs)&lt;/li>
+&lt;li>Determining the impact of the attack&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Monitoring and Threat Hunting&lt;/strong>
+&lt;ul>
+&lt;li>Watching for new attacker activity using TTPs and IOCs from forensics&lt;/li>
+&lt;li>Proactively hunting for additional compromised assets (systems, identities, etc.)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Remediation&lt;/strong>
+&lt;ul>
+&lt;li>This building block is the reason why we perform all the other building blocks. In the end we want to get rid of the attacker and establish a clean base-line&lt;/li>
+&lt;li>In this building block we need to implement a set of measures to achieve that&lt;/li>
+&lt;li>The results from digital forensics (especially the extent of the attack) comes in very handy here&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Lessons Learned&lt;/strong> (usually not a working stream but something you do after the remediation)
+&lt;ul>
+&lt;li>After remediation is done and successful, it&amp;rsquo;s time to learn your lessons&lt;/li>
+&lt;li>How can we avoid such incidents in the future?&lt;/li>
+&lt;li>How can we improve our prevention, detection, and response?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="the-role-of-incident-coordination">The Role of Incident Coordination
+&lt;/h1>&lt;p>As an incident coordinator you are effectively leading the whole incident and it&amp;rsquo;s your responsibility the resolve the incident. Therefore a multitude of tasks must be performed in the coordination building block. These tasks involve&lt;/p>
+&lt;ul>
+&lt;li>Setting up and moderating regular status calls with all stakeholders&lt;/li>
+&lt;li>Documenting and tracking status updates&lt;/li>
+&lt;li>Assigning and tracking ongoing tasks&lt;/li>
+&lt;li>Collecting results of all fulfilled tasks&lt;/li>
+&lt;li>Ensuring critical decisions are made and documented&lt;/li>
+&lt;li>Gathering and consolidating findings from all workstreams to maintain a situational overview&lt;/li>
+&lt;li>Translating technical findings for management&lt;/li>
+&lt;li>Communicating management decisions effectively to technical teams&lt;/li>
+&lt;li>Ensuring all workstreams receive the necessary information&lt;/li>
+&lt;/ul>
+&lt;p>Note that some of tasks can be delegated or supported by others, but responsibility ultimately falls back to you as an Incident Coordinator.&lt;/p>
+&lt;h1 id="why-incident-coordination-is-rare">Why Incident Coordination Is Rare
+&lt;/h1>&lt;p>The reason why there are so many providers not able to offer incident coordination is because high-quality incident coordinators are very rare. The role requires a unique combination of skills:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Highly organized&lt;/strong>
+&lt;ul>
+&lt;li>Incidents are chaotic, especially in the beginning&lt;/li>
+&lt;li>An Incident Coordinator must keep track of numerous moving parts&lt;/li>
+&lt;li>Every little thing that gets overlooked might cause huge damage later on in the incident (e.g. you forgot to turn of one compromised system &amp;ndash;&amp;gt; Your containment was incomplete and the attacker persists)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>High-level view&lt;/strong>
+&lt;ul>
+&lt;li>While forensic analysis like to get lost in technical details, someone needs to keep a high-level view of everything happening. This task goes to the incident coordinator&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Excellent communication skills&lt;/strong>
+&lt;ul>
+&lt;li>Since you have to communicate with forensic analysts as well as high-level management, you better work on your situational communication skills. Otherwise the analysts won&amp;rsquo;t respect you and management won&amp;rsquo;t understand you&lt;/li>
+&lt;li>Your moderation skills should also be strong since you often have to moderated chaotic calls and it&amp;rsquo;s on you to direct everyone in a productive direction&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Sufficient technical know-how&lt;/strong>
+&lt;ul>
+&lt;li>First of all you need sufficient know-how about how incidents, incident response, and cyber attacks work&lt;/li>
+&lt;li>Next you need to know typical measures of containment, evidence acquisition, forensics and remediation&lt;/li>
+&lt;li>To be able to communicate and direct the Digital Forensics block, you should have forensic experience yourself&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Incident Response Experience&lt;/strong>
+&lt;ul>
+&lt;li>It takes years of hands-on Incident response experience until you are able to lead major incidents like APTs, Ransomware or Bad Insiders&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Ability to Stay Calm Under Pressure&lt;/strong>
+&lt;ul>
+&lt;li>If the incident coordinator starts to panic, everybody is going to panic&lt;/li>
+&lt;li>If you have all the skills described above, keeping calm shouldn&amp;rsquo;t be a problem :)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="conclusion">Conclusion
+&lt;/h1>&lt;p>Now you know why Incident coordinators are rare. If you happen to find one, keep them and never let them go…&lt;/p>
+&lt;p>If you happen to be in the DACH region, we are training Incident Coordinators and Managers. So feel free to reach out.&lt;/p>
+&lt;p>One final piece of advice: if you&amp;rsquo;re selecting an Incident Response provider, always ask how they manage and coordinate an incident. If they don’t have a clear answer, you’re usually dealing with a forensics provider, not a true Incident Response. If you are looking for a forensics provider, this is fine. If you are looking for an Incident Response provider, you should keep looking.&lt;/p>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761213.htm#from_element=detail_alsolike" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>My Favorite DFIR and Cybersecurity Resources</title><link>https://dfir-delight.de/p/favorite-resources/</link><pubDate>Fri, 07 Feb 2025 16:00:00 +0000</pubDate><guid>https://dfir-delight.de/p/favorite-resources/</guid><description>&lt;img src="https://dfir-delight.de/p/favorite-resources/cover.jpg" alt="Featured image of post My Favorite DFIR and Cybersecurity Resources" />&lt;h1 id="tldr">TL;DR
+&lt;/h1>&lt;p>&lt;a class="link" href="https://www.reddit.com/r/blueteamsec/" target="_blank" rel="noopener"
+>Reddit BlueTeamSec&lt;/a> and Twitter with the filters mentioned below, will provide you with most of the information you&amp;rsquo;ll need on a daily basis.&lt;/p>
+&lt;h1 id="introduction">Introduction
+&lt;/h1>&lt;p>Whether you are a novice or a seasoned professional in the field of DFIR, it is crucial to know reliable and comprehensive sources for obtaining information and staying updated. It is equally important to remain open to discovering new resources that can enhance your knowledge. If you have new sources, which are not yet in this list, just send me a message on Twitter or an email.&lt;/p>
+&lt;p>The following compilation has expanded in recent years and will continue to evolve in this rapidly changing domain. Some resources may be removed or replaced over time.&lt;/p>
+&lt;p>To gather the majority of my news, I prefer utilizing RSS feeds within my email application. This approach proves convenient as the news articles are delivered directly to my inbox, which I check on a daily basis. However, since not all resources offer RSS feeds and some are more interactive (such as Twitter), it becomes necessary to manually check these sources.&lt;/p>
+&lt;p>The sources comprise not only DFIR-related material but also a wide range of topics within the realm of cybersecurity. This includes defensive and offensive security, threat landscapes, cyber politics (with a focus on Europe), and more. As an Incident Responder, it is crucial to stay informed about the entire cybersecurity landscape. Relying solely on forensic blogs would provide a limited perspective. While you may possess excellent technical analysis skills for dissecting each system forensically, you would lack the contextual information about the attacks. Contextual information often offers valuable insights into the motivation, capabilities, and objectives of the attacks. For instance, considering the ongoing Ukraine war, attacks on critical infrastructure in Europe are currently more likely to originate from Russia compared to other countries like China or the US. This is not to imply that all attacks come from Russia, but rather that the circumstances increase the probability of such occurrences. Hence, it is important to stay updated about these circumstances and have the big picture in mind while responding to incidents.&lt;/p>
+&lt;h1 id="sources">Sources
+&lt;/h1>&lt;p>The following are some of my favorite sources. I added links to RSS feeds and Twitter wherever possible and useful, so you can easily subscribe to them.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Tags&lt;/th>
+&lt;th>RSS&lt;/th>
+&lt;th>Twitter&lt;/th>
+&lt;th>Note&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.reddit.com/r/blueteamsec/" target="_blank" rel="noopener"
+>Reddit BlueTeamSec&lt;/a>&lt;/td>
+&lt;td>Collection, IR, DF, TI, Vulns&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.reddit.com/r/blueteamsec/new.rss" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Best and most comprehensive collection of new articles and posts I know so far. That&amp;rsquo;s the first thing I check every day :)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://thedfirreport.com/" target="_blank" rel="noopener"
+>The DFIR Report&lt;/a>&lt;/td>
+&lt;td>Blog, DF, IR, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/TheDFIRReport" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Excellent and very detailed reports about current attacks.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://windowsir.blogspot.com/" target="_blank" rel="noopener"
+>Windows Incident Response&lt;/a>&lt;/td>
+&lt;td>Blog, DF&lt;/td>
+&lt;td>&lt;a class="link" href="https://windowsir.blogspot.com/feeds/posts/default" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>One of the best forensic blogs out there. Nothing else is to be expected by Harlan Carvey, the author of the books &amp;ldquo;Windows Forensic Analysis&amp;rdquo;, &amp;ldquo;Windows Registry Forensics&amp;rdquo;, and many more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.inversecos.com/" target="_blank" rel="noopener"
+>Inversecos&lt;/a>&lt;/td>
+&lt;td>Blog, IR, DF&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/inversecos" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Great DFIR blog covering various topics. Low volume but high quality :)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://cyb3rops.medium.com/" target="_blank" rel="noopener"
+>Cyb3erops&lt;/a>&lt;/td>
+&lt;td>Blog, IR, DF, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/cyb3rops" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Florian Roth, undoubtedly one of the biggest contributers to the cybersecurity community with projects like Thor, Sigma, Raccine, etc., frequently posts on Twitter. I would also recommend to follow him on Twitter to get the latest news.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://blogs.jpcert.or.jp/en/" target="_blank" rel="noopener"
+>JPCert&lt;/a>&lt;/td>
+&lt;td>CERT, DF, IR, MA&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/jpcert_en" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Many nice blog posts about a variety of cybersecurity topics.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.mandiant.com/resources/blog" target="_blank" rel="noopener"
+>Mandiant Blog&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/Mandiant" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Mandiant&amp;rsquo;s Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://blog.talosintelligence.com/" target="_blank" rel="noopener"
+>Cisco Talos Intelligence&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/TalosSecurity" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Ciscos&amp;rsquo; Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://unit42.paloaltonetworks.com/" target="_blank" rel="noopener"
+>Unit42&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/Unit42_Intel" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Palo Alto&amp;rsquo;s Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://securelist.com/" target="_blank" rel="noopener"
+>Securelist&lt;/a>&lt;/td>
+&lt;td>Vendor, TI&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/Securelist" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Kaspersky&amp;rsquo;s Threat Intelligence Blog&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank" rel="noopener"
+>CISA&lt;/a>&lt;/td>
+&lt;td>Advisory&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.cisa.gov/cybersecurity-advisories/all.xml" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/CISACyber" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Cybersecurity &amp;amp; Infrastructure Security Agency published daily advisories on vulnerabilities and more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://blog.badsectorlabs.com/" target="_blank" rel="noopener"
+>Bad Sector Labs Blog&lt;/a>&lt;/td>
+&lt;td>Offensive&lt;/td>
+&lt;td>&lt;a class="link" href="https://blog.badsectorlabs.com/feeds/all.atom.xml" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://x.com/badsectorlabs" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Great to get an overview of current offensive news, write-ups, tools and exploits.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.heise.de/security/" target="_blank" rel="noopener"
+>Heise Security&lt;/a>&lt;/td>
+&lt;td>GER, News&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.heise.de/security/rss/news-atom.xml" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/heisec" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Go to news feed in germany for all related IT Security topics. Usually not very technical and not directly related to DFIR.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://netzpolitik.org/" target="_blank" rel="noopener"
+>Netzpolitik.org&lt;/a>&lt;/td>
+&lt;td>GER, Politics&lt;/td>
+&lt;td>&lt;a class="link" href="https://netzpolitik.org/feed" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/netzpolitik_org" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>German site (somtimes also english articles) about digital freedom rights.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://krebsonsecurity.com/" target="_blank" rel="noopener"
+>Krebs on Security&lt;/a>&lt;/td>
+&lt;td>Blog&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>Security news and investigations&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://securityaffairs.com/" target="_blank" rel="noopener"
+>Security Affairs&lt;/a>&lt;/td>
+&lt;td>News&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>News about all cybersecurity-related topics&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://www.vx-underground.org/" target="_blank" rel="noopener"
+>vx-underground&lt;/a>&lt;/td>
+&lt;td>Collection, MA&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/vxunderground" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Collection of malware samples and source codes&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a class="link" href="https://darknetdiaries.com/" target="_blank" rel="noopener"
+>Darknet Diaries&lt;/a>&lt;/td>
+&lt;td>Podcast&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&lt;a class="link" href="https://twitter.com/DarknetDiaries" target="_blank" rel="noopener"
+>Yes&lt;/a>&lt;/td>
+&lt;td>Well researched stories in the realm of hacking and cyber security. One of my favorite podcasts in that area :)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Sandworm&lt;/td>
+&lt;td>Book&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>No&lt;/td>
+&lt;td>&amp;ldquo;Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin&amp;rsquo;s Most Dangerous Hackers&amp;rdquo; is a great book and should be read by everyone working in cybersecurity.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="twitter">Twitter
+&lt;/h1>&lt;p>&lt;strong>This section is slightly deprecated since TweetDeck is not freely available anymore, and X is loosing importance. The search for tags still works.&lt;/strong>&lt;/p>
+&lt;p>One of the best platform to get the newest information about cybersecurity is Twitter. For a long time Twitter was the go-to platform for the whole community to share information and news about the newest attacks. Penetration testers share their newest tools and exploits, and threat analysts share their newest intel about current attacks. Since Musk has bought Twitter parts of the community moved to Mastodon or other platforms but still, Twitter is a platform rich in information on cybersecurity. The only thing you need to know is how to use it effectively.&lt;/p>
+&lt;p>Twitter lets you search for certain tags in their search field. The best tags on Twitter include:&lt;/p>
+&lt;ul>
+&lt;li>#CyberSecurity&lt;/li>
+&lt;li>#CyberSec&lt;/li>
+&lt;li>#InfoSec&lt;/li>
+&lt;li>#CyberAttacks&lt;/li>
+&lt;li>#DigitalSecurity&lt;/li>
+&lt;li>#CyberRisk&lt;/li>
+&lt;li>#DFIR&lt;/li>
+&lt;li>#IncidentResponse&lt;/li>
+&lt;li>#DigitalForensics&lt;/li>
+&lt;li>#BlueTeam&lt;/li>
+&lt;li>#DefensiveSecurity&lt;/li>
+&lt;li>#ThreatIntelligence&lt;/li>
+&lt;li>#ThreatIntel&lt;/li>
+&lt;li>#ThreatHunting&lt;/li>
+&lt;li>#ThreatAnalysis&lt;/li>
+&lt;li>#APT&lt;/li>
+&lt;li>#CTI&lt;/li>
+&lt;li>#OSINT&lt;/li>
+&lt;li>#SOC&lt;/li>
+&lt;li>#SIEM&lt;/li>
+&lt;li>#Yara&lt;/li>
+&lt;li>#0Day&lt;/li>
+&lt;li>#MalwareAnalysis&lt;/li>
+&lt;li>#Malware&lt;/li>
+&lt;li>#Ransomware&lt;/li>
+&lt;/ul>
+&lt;p>To bring Twitter&amp;rsquo;s tags to a next level, I use these tags on &lt;a class="link" href="https://tweetdeck.twitter.com/" target="_blank" rel="noopener"
+>TweetDeck&lt;/a> in different columns, as shown below:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Main feed&lt;/strong>: Getting news from the people I follow, which might not use tags at all. Note that you shouldn&amp;rsquo;t combine your private and your professional Twitter, otherwise this feed would be full of posts that distract you during work.&lt;/li>
+&lt;li>&lt;strong>General news about cybersecurity&lt;/strong>:
+&lt;ul>
+&lt;li>#CyberSecurity OR #CyberSec OR #InfoSec OR #CyberAttacks OR #DigitalSecurity OR #CyberRisk&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>DFIR-related posts&lt;/strong>:
+&lt;ul>
+&lt;li>#DFIR OR #IncidentResponse OR #DigitalForensics OR #BlueTeam OR #DefensiveSecurity&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>TI-related posts&lt;/strong>:
+&lt;ul>
+&lt;li>#ThreatIntelligence OR #ThreatIntel OR #ThreatHunting OR #ThreatAnalysis OR #Yara&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Optional: current topic you want to track like a new vulnerability&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://dfir-delight.de/p/favorite-resources/TweetDeck.png"
+width="1024"
+height="518"
+srcset="https://dfir-delight.de/p/favorite-resources/TweetDeck_hu_d7da4da1592a3a59.png 480w, https://dfir-delight.de/p/favorite-resources/TweetDeck_hu_b6179671cd074209.png 1024w"
+loading="lazy"
+alt="TweetDeck Example"
+class="gallery-image"
+data-flex-grow="197"
+data-flex-basis="474px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-vector/hand-drawn-groovy-psychedelic-background_18038192.htm#query=psychedelic%20pattern&amp;amp;position=1&amp;amp;from_view=keyword&amp;amp;track=ais" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item></channel></rss>

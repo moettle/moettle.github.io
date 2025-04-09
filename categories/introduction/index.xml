@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on DFIR Delight</title><link>https://dfir-delight.de/categories/introduction/</link><description>Recent content in Introduction on DFIR Delight</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Sep 2023 16:00:00 +0000</lastBuildDate><atom:link href="https://dfir-delight.de/categories/introduction/index.xml" rel="self" type="application/rss+xml"/><item><title>DFIR Glossary</title><link>https://dfir-delight.de/p/dfir-glossary/</link><pubDate>Wed, 27 Sep 2023 16:00:00 +0000</pubDate><guid>https://dfir-delight.de/p/dfir-glossary/</guid><description>&lt;img src="https://dfir-delight.de/p/dfir-glossary/cover.jpg" alt="Featured image of post DFIR Glossary" />&lt;p>Personally, I dislike it when people use abbreviations as if they are universally understood. More often than not, half of the people in a meeting won&amp;rsquo;t even know what an abbreviation means, but nobody would dare to ask. Furthermore, it is nearly impossible for newcomers to grasp a topic when people consistently use abbreviations without explaining them. You can ask any employee of a company with more than 50,000 employees how much they appreciate abbreviations. Every department tends to have its own set of abbreviations, and company-wide, most abbreviations aren&amp;rsquo;t even unique. Okay, enough complaining about abbreviations; I think you&amp;rsquo;ve got the idea.&lt;/p>
+&lt;p>While I&amp;rsquo;ve expressed my frustration with abbreviations, this article aims to provide an introduction to the most commonly used terms in Digital Forensics and Incident Response (DFIR). Oh wow, it&amp;rsquo;s not that difficult to write out an abbreviation, is it? The article also serves the purpose of defining terms that might have multiple meanings in different companies, countries, vendors, etc.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Term&lt;/th>
+&lt;th>Explanation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Active Directory (AD)&lt;/td>
+&lt;td>Microsoft&amp;rsquo;s solution for managing an on-premises Microsoft enterprise environment.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Advanced Persistent Threat (APT)&lt;/td>
+&lt;td>A sophisticated threat actor, often state-sponsored, performing elaborate attacks on selected targets with the goal of espionage, financial gain, or sabotage / destruction. These attacks are often carried out stealthily over an extended period (months to years). Due to the substantial financial and personnel resources of these threat actors, they are highly dangerous and challenging to defend against.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alternate Data Stream (ADS)&lt;/td>
+&lt;td>A file attribute in the NTFS file system, often used to hide data from detection.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Antivirus (AV)&lt;/td>
+&lt;td>A program designed to detect and prevent malware on endpoints.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Azure Active Directory (AAD)&lt;/td>
+&lt;td>Microsoft&amp;rsquo;s solution for managing a Microsoft cloud environment, now renamed to Microsoft Entra ID.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Blue Team&lt;/td>
+&lt;td>The team responsible for defending an organization. The term is also used during simulations, where a red team simulates an attack, and a blue team defends against it.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Command and Control (C2, C&amp;amp;C)&lt;/td>
+&lt;td>A method for threat actors to remotely control a compromised system over the network. C2 typically involves a compromised system and a C2 server for control, often using simple HTTP or HTTPS channels to evade detection among an organization&amp;rsquo;s usual network traffic.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Computer Emergency Response Team (CERT)&lt;/td>
+&lt;td>A team of security experts specialized in handling cyberattacks and security incidents, which may not be limited to organizations; some countries have their own CERTs, and even the EU has one.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Computer Security Incident Response Team (CSIRT)&lt;/td>
+&lt;td>Sometimes used as a synonym for CERT, but also refers to a dedicated team that exists primarily during major incidents, whereas CERTs are active in daily operations. Definitions may vary among organizations.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Confidentiality, Integrity, Availability (CIA)&lt;/td>
+&lt;td>Protective goals originating from Information Security.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Containment&lt;/td>
+&lt;td>The act of slowing down or stopping an attacker to limit further impact and damage, typically initiated early after detecting an attack or when attackers become active again during Incident Response. The range of containment measures will be covered in a future post.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cyber Threat Intelligence (CTI)&lt;/td>
+&lt;td>See TI (Threat Intelligence).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Domain Controller (DC)&lt;/td>
+&lt;td>A server responsible for processing authentication requests within an Active Directory (AD).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Deception&lt;/td>
+&lt;td>A category of security solutions aimed at detecting attackers by deceiving them, such as internal honeypots.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Denial-of-Service (DOS)&lt;/td>
+&lt;td>An attack with the goal of disrupting the availability of a system or service, often achieved by flooding the server with requests.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Digital Forensics (DF)&lt;/td>
+&lt;td>The act of analyzing digital evidence to reach investigative goals, which can range from presenting results in court to understanding a cyberattack.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Digital Forensics and Incident Response (DFIR)&lt;/td>
+&lt;td>A broad term used to describe the field encompassing digital forensic analysis and Incident Response.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Distributed Denial-of-Service (DDOS)&lt;/td>
+&lt;td>A DOS attack where the flooding comes from multiple systems, commonly achieved through request amplification or bot networks.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Endpoint Detection &amp;amp; Response (EDR)&lt;/td>
+&lt;td>A security tool that detects threats and unusual behavior on endpoints and enables a company to respond effectively to alerts. EDR collects all endpoint events centrally and offers response features like isolation, containment, live response, and more, surpassing traditional antivirus solutions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Entra ID&lt;/td>
+&lt;td>See Azure Active Directory (AAD)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Evidence Acquisition&lt;/td>
+&lt;td>The process of collecting evidence for later forensic analysis, including disk images, memory images, triage packages, log files, single artifacts, malware samples, and more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Extended Detection and Response (XDR)&lt;/td>
+&lt;td>A marketing term for EDR (Endpoint Detection &amp;amp; Response).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Honeypot (internal)&lt;/td>
+&lt;td>An internal honeypot acts as an enticing target for attackers to deceive them. Access to such a honeypot is monitored, and the security team is alerted when access occurs. Examples include systems with vulnerabilities or open file shares.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Incident Response (IR)&lt;/td>
+&lt;td>The act of responding to cyber security incidents.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Indicator of Compromise (IOC)&lt;/td>
+&lt;td>Indicators used for detecting a compromise, typically specific to a single attack or attacker group. IOCs can include filenames, hashes, URLs, domains, IPs, command lines, registry keys, and more.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Information Security (IS)&lt;/td>
+&lt;td>Focused on protecting information related to CIA (Confidentiality, Integrity, Availability) within an organization.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Information Security Management System (ISMS)&lt;/td>
+&lt;td>A framework for managing an organization&amp;rsquo;s sensitive data related to CIA, using a set of policies and procedures.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Information Security Operations Center (ISOC)&lt;/td>
+&lt;td>See SOC (Security Operation Center).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Intrusion Detection System (IDS)&lt;/td>
+&lt;td>A system monitoring the network for malicious activity and triggering alerts.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Intrusion Prevention System (IPS)&lt;/td>
+&lt;td>An IDS that also attempts to block detected malicious activity.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>KAPE&lt;/td>
+&lt;td>A valuable tool for creating triage packages from Windows systems.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Malware Analysis&lt;/td>
+&lt;td>The process of analyzing a malware sample to understand its functionality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network Detection and Response (NDR)&lt;/td>
+&lt;td>A solution continuously monitoring the network for threats and offering network-level response actions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network Operation Center (NOC)&lt;/td>
+&lt;td>A team that monitors the network traffic of an organization. Many organizations don&amp;rsquo;t have a NOC anymore but rather a monitoring team in general or a SIEM team, which also covers network monitoring. Since network monitoring is only a part of a complete monitoring strategy, it often resolves in a large monitoring team.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Network Security Monitoring (NSM)&lt;/td>
+&lt;td>The continuous monitoring of network traffic to detect malicious activity.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>NT File System (NTFS)&lt;/td>
+&lt;td>A proprietary file system used by Windows.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Privileged Access Workstation (PAW)&lt;/td>
+&lt;td>A dedicated workstation for administrative tasks, with added hardening to make it more resistant to admin account takeovers and lateral movement by attackers.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Purple Team&lt;/td>
+&lt;td>A collaboration between a blue team (defense) and a red team (offense) working together in a coordinated manner.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Red Team&lt;/td>
+&lt;td>A team responsible for offensive work, often involved in security assessments or attack simulations to test an organization&amp;rsquo;s existing defense and detection mechanisms.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Remediation&lt;/td>
+&lt;td>The act of mitigating an attack after it has occurred, aiming to regain control over the infrastructure, remove attackers from systems, and return to normal operations. Forensics analysis is essential for defining effective remediation measures, which may include reinstalling compromised systems, changing passwords on abused accounts, or enhancing security to prevent the same incident in the future.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Reverse Engineering (RE)&lt;/td>
+&lt;td>Part of malware analysis, involving reconstructing the original source code of a compiled malware sample to understand its functionality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security Incident Management Process (SIMP)&lt;/td>
+&lt;td>A process defining the handling and management of security incidents within an organization, with templates available in ISO 27035, SANS, and NIST standards.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security Information and Event Management (SIEM)&lt;/td>
+&lt;td>A solution helping companies detect and analyze security incidents by centrally collecting various logs, standardizing them, and generating alerts based on predefined signatures.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security Operation Center (SOC)&lt;/td>
+&lt;td>In larger organizations, a SOC is often the first level to handle incoming security alerts, often managed by a higher entity like a CERT.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SIGMA&lt;/td>
+&lt;td>An excellent GitHub project providing SIEM signatures in a generic format.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tactics, Techniques, and Procedures (TTP)&lt;/td>
+&lt;td>Behaviors of threat actors during an attack, defined by MITRE ATT&amp;amp;CK®, a database cataloging tactics and techniques used by attackers.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thor&lt;/td>
+&lt;td>An IOC scanner specialized in detecting traces of attacks on endpoints, offering over 10,000 signatures and various modules for system scanning. A free variant, Thor-lite, is also available.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Threat Intelligence (TI)&lt;/td>
+&lt;td>The process of gathering information about current cyber threats and risks, utilized for prevention, detection, or response to incidents within an organization.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Threat Hunting&lt;/td>
+&lt;td>The proactive search for traces of attacks within an organization, often initiated by new reports, ideas for identifying attackers, or management concerns. Threat hunting is commonly performed in EDR or SIEM systems.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Traffic Light Protocol (TLP)&lt;/td>
+&lt;td>TLP is a tagging system for shared information specifying sharing options for recipients. It includes four labels: TLP:RED (For recipient only), TLP:AMBER (Limited disclosure, e.g., within the organization), TLP:GREEN (Limited disclosure, e.g., within a community), and TLP:CLEAR (No limitations, shared information can be published).&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Windows Event Forwarding (WEF)&lt;/td>
+&lt;td>The forwarding of Windows Event logs to a central server, which is supported by Windows by default and is for free, making it an excellent way to collect all Windows Event Logs in one place, simplifying log management.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>YARA (Yet Another Ridiculous Acronym)&lt;/td>
+&lt;td>YARA provides a standard for writing detection signatures and offers a scanner to apply them to files or directories, serving as the de-facto standard for signature writing for files.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>Cover Image by &lt;a class="link" href="https://www.freepik.com/free-photo/multi-colored-psychedelic-background_11761198.htm#&amp;amp;position=37&amp;amp;from_view=collections" target="_blank" rel="noopener"
+>Freepik&lt;/a>&lt;/p>&lt;/blockquote></description></item></channel></rss>
